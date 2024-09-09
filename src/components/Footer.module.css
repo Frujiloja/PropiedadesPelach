@@ -1,9 +1,10 @@
 .footer {
   background-color: #000; /* Fondo negro */
-  color: #d31b61;
+  color: #0b9451;
   padding: 1rem;
   text-align: center;
-  border-top: 1px solid #d31b61;
+  border-top: 1px solid #0b9451;
+  height: 1rem;
 }
 
 .container {

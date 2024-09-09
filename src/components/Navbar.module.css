@@ -1,174 +1,26 @@
 .navbar {
   background-color: rgb(25, 25, 25);
-  border-bottom: 1px solid #d31b61;
+  height: 7vh;
+  width: 100%;
+  border-bottom: 1px solid #0b9451;
   position: fixed;
   z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdownMenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: rgb(50, 50, 50);
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 200px;
-  border-radius: 5px;
-}
-
-.dropdownMenu li {
-  padding: 8px 12px;
-}
-
-.dropdownMenu li a {
-  text-decoration: none;
-  color: rgb(242, 242, 242);
-}
-.dropdownMenu li a:hover {
-    text-decoration: none;
-    color: pink;
-  }
-
-.dropdown:hover .dropdownMenu {
-  display: block;
-}
-
-.desktopnav {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 10vh;
-  width: 100vw;
+  justify-content: space-around;
 }
 
-.menu {
-  display: flex;
+.logo {
+  height: 5vh;
 }
 
-.menuitems {
+li {
+  color: white;
+}
+
+ul {
   display: flex;
   gap: 2rem;
   list-style: none;
   font-size: 1.3rem;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  text-decoration-color: white;
-  transition: color 0.3s ease;
-  cursor: pointer;
-}
-
-.a1 {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-a:hover {
-  color: pink;
-}
-
-.logo {
-  height: 40px;
-  cursor: pointer;
-}
-
-.burguernav {
-  display: none;
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
-}
-
-.burguermenu {
-  position: relative;
-  display: inline-block;
-}
-
-.burguericon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
-}
-
-.burguericon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
-}
-
-.menulinks {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
-}
-
-.menulinks a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  transition: all 0.3 ease-in-out;
-}
-
-.menulinks li {
-  list-style: none;
-}
-
-.menulinks.open {
-  max-height: 300px;
-}
-
-.burguericon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-
-.burguericon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.burguericon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.burguericon span:first-child {
-  transform: none;
-}
-
-.burguericon span:first-child {
-  opacity: 1;
-}
-
-.burguericon span:first-child {
-  transform: none;
-}
-
-@media screen and (max-width: 1200px) {
-  .desktopnav {
-    display: none;
-  }
-
-  .burguernav {
-    display: flex;
-  }
 }
