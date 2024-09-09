@@ -12,16 +12,44 @@ const Navbar = () => {
       <div className={styles.navbar_container}>
         <ul>
           <li>
-            Inicio
+            <Link className={styles.link} to="/">
+              Inicio
+            </Link>
           </li>
           <li>
-            Comprar
+            <Link className={styles.link} to="/">
+              Comprar
+            </Link>
           </li>
           <li>
-            Alquilar
+            <Link className={styles.link} to="/">
+              Alquilar
+            </Link>
           </li>
           <li>
-            Vender
+            <Link className={styles.link} to="/">
+              Vender
+            </Link>
+          </li>
+          <li>
+            <Link className={styles.link} to="/">
+              Nosotros
+            </Link>
+          </li>
+          <li>
+            <Link className={styles.link} to="/">
+              Desarrollos
+            </Link>
+          </li>
+          <li>
+            <Link className={styles.link} to="/">
+              Novedades
+            </Link>
+          </li>
+          <li>
+            <Link className={styles.link} to="/">
+              Contacto
+            </Link>
           </li>
         </ul>
       </div>

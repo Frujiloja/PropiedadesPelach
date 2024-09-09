@@ -14,8 +14,14 @@
   height: 5vh;
 }
 
-li {
+.link {
   color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0b9451;
 }
 
 ul {
@@ -23,4 +29,5 @@ ul {
   gap: 2rem;
   list-style: none;
   font-size: 1.3rem;
+  text-decoration: none;
 }
