@@ -1,0 +1,27 @@
+.footer {
+  background-color: #000; /* Fondo negro */
+  color: #d31b61;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #d31b61;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.link, .contact {
+  color: #f1f1f1; /* Color de los enlaces */
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.link:hover, .contact:hover {
+  text-decoration: underline;
+}
