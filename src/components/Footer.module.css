@@ -4,7 +4,7 @@
   padding: 1rem;
   text-align: center;
   border-top: 1px solid #0b9451;
-  height: 1rem;
+  height: 2vh;
 }
 
 .container {
@@ -15,6 +15,7 @@
 .text {
   margin: 0;
   font-size: 0.875rem;
+  color: white
 }
 
 .link, .contact {

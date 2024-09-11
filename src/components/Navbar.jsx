@@ -17,37 +17,37 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className={styles.link} to="/">
+            <Link className={styles.link} to="/comprar">
               Comprar
             </Link>
           </li>
           <li>
-            <Link className={styles.link} to="/">
+            <Link className={styles.link} to="/alquilar">
               Alquilar
             </Link>
           </li>
           <li>
-            <Link className={styles.link} to="/">
+            <Link className={styles.link} to="/vender">
               Vender
             </Link>
           </li>
           <li>
-            <Link className={styles.link} to="/">
-              Nosotros
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.link} to="/">
+            <Link className={styles.link} to="/desarrollos">
               Desarrollos
             </Link>
           </li>
           <li>
-            <Link className={styles.link} to="/">
+            <Link className={styles.link} to="/nosotros">
+              Nosotros
+            </Link>
+          </li>
+          <li>
+            <Link className={styles.link} to="/novedades">
               Novedades
             </Link>
           </li>
           <li>
-            <Link className={styles.link} to="/">
+            <Link className={styles.link} to="/contacto">
               Contacto
             </Link>
           </li>

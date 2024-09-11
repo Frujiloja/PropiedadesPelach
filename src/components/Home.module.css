@@ -1,5 +1,5 @@
 .home_container {
-  height: 200vh;
+  height: 180vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -165,6 +165,7 @@ h4 {
 .ptext {
   color: black;
   font-weight: 400;
+  width: 70%;
 }
 
 p {
@@ -177,4 +178,18 @@ p {
   margin-top: 1rem;
   height: 11vh;
   margin-bottom: 2rem;
+}
+
+.logogif {
+  margin-top: 2rem;
+}
+
+.pblack {
+  color: black;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
 }

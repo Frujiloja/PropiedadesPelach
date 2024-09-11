@@ -3,8 +3,15 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+import Alquilar from "./components/Alquilar.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
-// import About from "./components/About.jsx"
+import Contacto from "./components/Contacto.jsx";
+import Comprar from "./components/Comprar.jsx";
+import Vender from "./components/Vender.jsx";
+import Desarrollo from "./components/Desarrollo.jsx";
+import Novedades from "./components/Novedades.jsx";
+import Nosotros from "./components/Nosotros.jsx";
+
 
 
 
@@ -17,11 +24,18 @@ const RouterConfig = () => {
       
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/alquilar" element={<Alquilar />} />
+        <Route path="/comprar" element={<Comprar />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/desarrollos" element={<Desarrollo />} />
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/novedades" element={<Novedades />} />
+        <Route path="/vender" element={<Vender />} />
         {/* <Route path="/about" element={<About />} /> */}
       </Routes>
 
       {/* Footer se muestra en todas las rutas */}
-      <Footer />
+      <Footer  />
     </Router>
   );
 };
