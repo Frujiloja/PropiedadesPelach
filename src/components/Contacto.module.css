@@ -1,5 +1,14 @@
 .contacto_container {
-    height: 100vh;
+    height: 95vh;
     width: 100%;
-    background-color: rgba(0, 255, 255, 0.64);
+    position: relative;
+}
+
+.edificios {
+    width: 100%;
+    opacity: 15%;
+    position: absolute; /* Posiciona la imagen */
+    bottom: 0; /* La imagen queda pegada al fondo del contenedor */
+    left: 0;
+    z-index: -1;
 }
