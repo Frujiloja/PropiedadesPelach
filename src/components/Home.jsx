@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Home.module.css";
-import { FaHome } from "react-icons/fa";
+import { FaRegNewspaper , FaPhone, FaCalculator   } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Banner from "../assets/Banner.gif";
 import logogif from "../assets/cucicba-logo.gif";
@@ -96,12 +96,28 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.box_container}>
-        <Link className={styles.recuadro}>
+        <Link className={styles.recuadro} to="/tasaciones">
           <div className={styles.recuadro}>
-            <FaHome className={styles.icon} /> {/* Ícono de la casa */}
+            <FaCalculator  className={styles.icon} /> {/* Ícono de la casa */}
             <h4>Tasar Con Un Profesional</h4>
             <p>
               El primer paso para que puedas vender o alquilar tu propiedad.
+            </p>
+          </div>
+        </Link>
+        <Link className={styles.recuadro} to="/contacto">
+          <div className={styles.recuadro}>
+            <FaPhone  className={styles.icon} /> {/* Ícono de la casa */}
+            <h4>Contactanos</h4>
+            <p>Entérate de todas las opciones disponibles en CABA. </p>
+          </div>
+        </Link>
+        <Link className={styles.recuadro} to="/novedades">
+          <div className={styles.recuadro}>
+            <FaRegNewspaper  className={styles.icon} /> {/* Ícono de la casa */}
+            <h4>Enterate Nuestras Novedades</h4>
+            <p>
+              Conocé nuestra ultimas novedades y nuevas leyes inmobiliarias.
             </p>
           </div>
         </Link>
@@ -141,8 +157,8 @@ const Home = () => {
       </p>
       <img className={styles.logogif} src={logogif} alt="logo gif" />
       <p className={styles.pblack}>
-        <h5>Pelach Propiedades</h5>CUCICBA Matrícula 1892 Las Heras 3780 - C.A.B.A
-        Tel. (011) 4801-2877 info@pelachpropiedades.com.ar
+        <h5>Pelach Propiedades</h5>CUCICBA Matrícula 1892 Las Heras 3780 -
+        C.A.B.A Tel. (011) 4801-2877 info@pelachpropiedades.com.ar
       </p>
     </div>
   );

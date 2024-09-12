@@ -30,7 +30,7 @@ const RouterConfig = () => {
         <Route path="/desarrollos" element={<Desarrollo />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/novedades" element={<Novedades />} />
-        <Route path="/vender" element={<Vender />} />
+        <Route path="/tasaciones" element={<Vender />} />
         {/* <Route path="/about" element={<About />} /> */}
       </Routes>
 

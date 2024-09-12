@@ -2,6 +2,10 @@
     height: 95vh;
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .edificios {
@@ -12,3 +16,90 @@
     left: 0;
     z-index: -1;
 }
+
+.h1 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.div_container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.contact_form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.337);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form_group {
+    margin-bottom: 15px;
+  }
+  
+  .form_group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .form_input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    height: 40px;
+  }
+  
+  .form_input:focus {
+    border-color: #0b9451;
+    box-shadow: 0 0 5px rgba(11, 148, 81, 0.5);
+    outline: none;
+  }
+  
+  textarea.form_input {
+    resize: vertical;
+    min-height: 60px;
+  }
+  
+  .form_button {
+    background-color: #0b9451;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .form_button:hover {
+    background-color: #10c26c;
+  }
+  
+  .form_button:focus {
+    outline: none;
+    background-color: #0b9451;
+  }
+  
+  @media (max-width: 768px) {
+    .contact_form {
+      padding: 15px;
+    }
+  }

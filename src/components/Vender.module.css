@@ -1,5 +1,123 @@
-.vender_container {
-    height: 100vh;
+.contacto_container {
+    height: 95vh;
     width: 100%;
-    background-color: rgba(0, 255, 255, 0.64);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.edificios {
+    width: 100%;
+    opacity: 15%;
+    position: absolute; /* Posiciona la imagen */
+    bottom: 0; /* La imagen queda pegada al fondo del contenedor */
+    left: 0;
+    z-index: -2;
+}
+
+.banner {
+    position: absolute; /* Posiciona la imagen */
+    top: 0; /* La imagen queda pegada al fondo del contenedor */
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    border-bottom: 2px solid #0b9451;
+}
+
+.contacto {
+    /* background-color: red; */
+    height: 60vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.h2 {
+    font-size: 1rem;
+    color: rgb(215, 215, 215);
+    font-weight: 600;
+}
+
+.contact_form {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.324);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+  
+  .form_group {
+    margin-bottom: 15px;
+  }
+  
+  .form_group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .form_input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c3c3c3;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    height: 40px;
+    box-sizing: border-box; /* Asegura que padding y borde no afecten el ancho */
+  }
+  
+  .form_input:focus {
+    border-color: #0b9451;
+    box-shadow: 0 0 5px rgba(11, 148, 81, 0.5);
+    outline: none;
+  }
+  
+  textarea.form_input {
+    resize: vertical;
+    min-height: 60px;
+  }
+
+  select.form_input {
+    height: 40px; /* Establece la misma altura que los inputs */
+  }
+  
+  .form_button {
+    background-color: #0b9451;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .form_button:hover {
+    background-color: #10c26c;
+  }
+  
+  .form_button:focus {
+    outline: none;
+    background-color: #0b9451;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 15px;
+    }
+  }

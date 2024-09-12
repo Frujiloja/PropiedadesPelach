@@ -2,7 +2,7 @@
   background-color: rgb(25, 25, 25);
   height: 7vh;
   width: 100%;
-  border-bottom: 1px solid #0b9451;
+  border-bottom: 5px solid #0b9451;
   position: fixed;
   z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
   display: flex;
