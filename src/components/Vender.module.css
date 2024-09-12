@@ -10,7 +10,7 @@
 
 .edificios {
     width: 100%;
-    opacity: 15%;
+    opacity: 10%;
     position: absolute; /* Posiciona la imagen */
     bottom: 0; /* La imagen queda pegada al fondo del contenedor */
     left: 0;

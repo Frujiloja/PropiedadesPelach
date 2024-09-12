@@ -1,17 +1,44 @@
 [
     {
       "id": 1,
-      "address": "123 Main St",
-      "price": "200000",
-      "type": "apartment",
-      "description": "A beautiful apartment in the city center."
+      "direccion": "123 Main St",
+      "precio": "200000",
+      "tipo": "Departamento",
+      "descripcion": "A beautiful apartment in the city center.",
+      "operacion": "Venta",
+      "antiguedad": "50",
+      "ambientes": "5",
+      "dormitorios": "5",
+      "baños": "5",
+      "toilette": "5",
+      "ubicacion": "5",
+      "luminosidad": "5",
+      "estado_general": "5",
+      "entre": "5",
+      "proximo_a": "5",
+      "tipo_de_edificio": "5",
+      "orientacion": "NE",
+      "imagen": "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726174689/106351114779244990764472571167166652704186334829841520574035596302164512939614_y9xwl4.jpg"
     },
     {
       "id": 2,
-      "address": "456 Elm St",
-      "price": "350000",
-      "type": "house",
-      "description": "A spacious house with a large garden."
+      "direccion": "123 Main St",
+      "precio": "200000",
+      "tipo": "Departamento",
+      "descripcion": "A beautiful apartment in the city center.",
+      "operacion": "Venta",
+      "antiguedad": "50",
+      "ambientes": "5",
+      "dormitorios": "5",
+      "baños": "5",
+      "toilette": "5",
+      "ubicacion": "5",
+      "luminosidad": "5",
+      "estado_general": "5",
+      "entre": "5",
+      "proximo_a": "5",
+      "tipo_de_edificio": "5",
+      "orientacion": "NE"
     }
   ]
   

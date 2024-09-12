@@ -1,5 +1,5 @@
 export const GET_PROPIEDADES = "GET_PROPIEDADES";
-import propertiesData from './ProductsDB.json'; // Ajusta la ruta según la ubicación real del archivo
+import propertiesData from '../ProductsDB.json'; // Ajusta la ruta según la ubicación real del archivo
 
 export const getPropiedades = () => {
     return function(dispatch){

@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Home.module.css";
 import { FaRegNewspaper , FaPhone, FaCalculator   } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Banner from "../assets/Banner.gif";
 import logogif from "../assets/cucicba-logo.gif";
+import { useDispatch } from "react-redux";
+import { getPropiedades } from "../redux/actions";
 
 const Home = () => {
+
+  const dispatch = useDispatch();
+
+  useEffect(()=>{
+    dispatch(getPropiedades()); //me traigo las propiedades
+},[dispatch])
+
   const [activeTab, setActiveTab] = useState(0);
 
   // Función para cambiar la pestaña activa
