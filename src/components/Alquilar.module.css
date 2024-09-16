@@ -42,7 +42,6 @@
   /* background-color: gray; */
   width: 90%;
   border-radius: 10px;
-  height: 100vh;
 }
 
 .card {
@@ -181,11 +180,11 @@
 }
 
 .botonWhatsapp {
-  background-color: #1ebe57; /* Color de fondo del botón WhatsApp */
+  background-color: #0b9451; /* Color de fondo del botón WhatsApp */
 }
 
 .botonWhatsapp:hover {
-  background-color: #22d661;
+  background-color: #0fb967;
 }
 
 .botonContactar i, .botonWhatsapp i {
