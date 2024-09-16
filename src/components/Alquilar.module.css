@@ -1,5 +1,194 @@
 .alquilar_container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-color: rgba(0, 255, 255, 0.64);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edificios {
+    width: 100%;
+    opacity: 10%;
+    position: absolute; /* Posiciona la imagen */
+    bottom: 0; /* La imagen queda pegada al fondo del contenedor */
+    left: 0;
+    z-index: -1;
+}
+
+.cards_filter {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+    gap: 2rem;
+}
+
+.filtros {
+  /* background-color: gray; */
+  width: 80%;
+  border-radius: 10px;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cards {
+  /* background-color: gray; */
+  width: 90%;
+  border-radius: 10px;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff; /* Fondo blanco para las cards */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden; /* Ocultar desbordamiento para el borde redondeado */
+  margin: 10px; /* Espaciado entre cards */
+  display: flex; /* Flexbox para alinear contenido horizontalmente */
+  align-items: center; /* Alinear contenido verticalmente al centro */
+  height: 25vh;
+  border: 1px solid rgb(198, 198, 198);
+  position: relative;
+}
+
+.card img {
+  width: 400px; /* Ajusta el ancho según tus necesidades */
+  height: 25vh; /* Ajusta la altura según tus necesidades */
+  object-fit: cover; /* Mantiene la proporción de la imagen y cubre el área del contenedor */
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin-right: 15px; /* Espaciado a la derecha de la imagen */
+}
+
+.card-content {
+  flex: 1; /* Hacer que el contenido ocupe el espacio restante */
+  padding: 15px; /* Espaciado interno */
+}
+
+.card h2 {
+  font-size: 1.25rem; /* Tamaño de fuente para el título */
+  color: #333; /* Color de texto oscuro */
+  margin: 0; /* Eliminar márgenes */
+}
+
+.p_card {
+  font-size: 1rem; /* Tamaño de fuente para el texto */
+  color: #666; /* Color de texto gris para el contenido */
+  margin: 5px 0; /* Espaciado arriba y abajo del texto */
+  text-align: left;
+  font-weight: 400;
+}
+
+.selectFiltro {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  transition: border-color 0.3s ease;
+  outline: none;
+  height: 5vh;
+}
+
+.inputFiltro {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  transition: border-color 0.3s ease;
+  outline: none;
+  height: 3vh;
+  width: 150px;
+}
+
+.selectFiltro:focus,
+.inputFiltro:focus {
+  border-color: #0b9451;
+}
+
+.botonBuscar {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0b9451;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 5vh;
+}
+
+.botonBuscar:hover {
+  background-color: #0fb967;
+}
+
+.botonBuscar2 {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #3d3d3d;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 5vh;
+}
+
+.botonBuscar2:hover {
+  background-color: #6b6b6b;
+}
+
+.card_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: absolute; /* Posiciona los botones sobre la tarjeta */
+  top: 2.5rem; /* Ajusta el espaciado desde la parte superior */
+  right: 3rem; /* Ajusta el espaciado desde el borde derecho */
+}
+
+.botonContactar, .botonWhatsapp {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 0.5rem 0; /* Espaciado entre los botones */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  gap: 0.5rem;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+
+}
+
+.botonContactar {
+  background-color: #3d3d3d; /* Color de fondo del botón Contactar */
+}
+
+.botonContactar:hover {
+  background-color: #6b6b6b;
+}
+
+.botonWhatsapp {
+  background-color: #1ebe57; /* Color de fondo del botón WhatsApp */
+}
+
+.botonWhatsapp:hover {
+  background-color: #22d661;
+}
+
+.botonContactar i, .botonWhatsapp i {
+  margin-right: 0.5rem; /* Espaciado entre el ícono y el texto */
+  font-size: 1.2rem; /* Tamaño del ícono */
 }
