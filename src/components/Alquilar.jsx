@@ -1,7 +1,7 @@
 import styles from "./Alquilar.module.css";
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { getPropiedades } from "../redux/actions";
+import { getPropiedadesAlquiler } from "../redux/actions";
 import { Link } from "react-router-dom";
 import edificios from "../assets/vecteezy_city-background-illustration-black_22227434.png";
 
@@ -9,14 +9,14 @@ const Alquilar = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getPropiedades()); //me traigo las propiedades
+    dispatch(getPropiedadesAlquiler()); //me traigo las propiedades
   }, [dispatch]);
 
-  const propiedades = useSelector((state) => state.propiedades);
+  const propiedades = useSelector((state) => state.propiedadesAlquiler);
 
-  const propiedadesAlquiler = propiedades.filter(
-    (property) => property.operacion === "Alquiler"
-  );
+  // const propiedadesAlquiler = propiedades.filter(
+  //   (property) => property.operacion === "Alquiler"
+  // );
 
   const phoneNumber = "5491152280786"; // Reemplaza con el número de teléfono real
   const message = "Hola, me interesa más información"; // Mensaje predeterminado (opcional)
@@ -80,7 +80,7 @@ const Alquilar = () => {
           <button className={styles.botonBuscar2}>Limpiar Filtros</button>
         </div>
         <div className={styles.cards}>
-          {propiedadesAlquiler.map((propiedad) => (
+          {propiedades.map((propiedad) => (
             <div key={propiedad.id} className={styles.card}>
               <img src={propiedad.imagen} alt="foto propiedad" />
               <div className={styles.card_content}>
