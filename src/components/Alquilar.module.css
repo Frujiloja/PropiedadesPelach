@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 95vh;
 }
 
 .edificios {
@@ -130,6 +131,9 @@
 }
 
 .botonBuscar2 {
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  justify-content: center; /* Centra el texto horizontalmente */
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: none;

@@ -1,25 +1,76 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Home.module.css";
-import { FaRegNewspaper , FaPhone, FaCalculator   } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaRegNewspaper, FaPhone, FaCalculator } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
 import Banner from "../assets/Banner.gif";
 import logogif from "../assets/cucicba-logo.gif";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getPropiedades } from "../redux/actions";
 
 const Home = () => {
-
   const dispatch = useDispatch();
+  const propiedades = useSelector((state) => state.propiedades);
+  const navigate = useNavigate(); // Hook de navegación
 
-  useEffect(()=>{
+
+  const [barrios, setBarrios] = useState([]);
+  const [tipoInmueble, settipoInmueble] = useState([]);
+
+  useEffect(() => {
     dispatch(getPropiedades()); //me traigo las propiedades
-},[dispatch])
+    const extractUniqueBarrios = () => {
+      const barriosUnicos = [
+        ...new Set(propiedades.map((prop) => prop.ubicacion)),
+      ];
+      setBarrios(barriosUnicos);
+    };
+    const extractUniqueTipos = () => {
+      const tiposUnicos = [...new Set(propiedades.map((prop) => prop.tipo))];
+      settipoInmueble(tiposUnicos);
+    };
+    extractUniqueBarrios();
+    extractUniqueTipos();
+  }, [dispatch]);
 
   const [activeTab, setActiveTab] = useState(0);
 
   // Función para cambiar la pestaña activa
   const changeTab = (index) => {
     setActiveTab(index);
+  };
+
+  const [filtros, setFiltros] = useState({
+    ubicacion: "",
+    tipo: "",
+    ambientes: "",
+    precioMin: "",
+    precioMax: "",
+    operacion: "Venta",
+  });
+
+  const handleChange = (e) => {
+    setFiltros({
+      ...filtros,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSearch = () => {
+    let url;
+    switch (activeTab) {
+      case 0:
+        url = "/comprar"; // URL para la pestaña "Comprar"
+        break;
+      case 1:
+        url = "/alquilar"; // URL para la pestaña "Alquilar"
+        break;
+      case 2:
+        url = "/desarrollos"; // URL para la pestaña "Desarrollos"
+        break;
+      default:
+        url = "/";
+    }
+    navigate(url); // Redirige a la URL correspondiente
   };
 
   return (
@@ -50,64 +101,127 @@ const Home = () => {
             <div className={styles.content}>
               {activeTab === 0 && (
                 <div className={styles.h4_container}>
-                  <input type="text" placeholder="Tipo de Propiedad" />
-                  <input type="text" placeholder="Ciudades o Barrios" />
+                  <select
+                    name="tipo"
+                    value={filtros.tipo}
+                    onChange={handleChange}
+                    className={styles.selectFiltro}
+                  >
+                    <option value="">Tipo de Propiedad</option>
+                    {tipoInmueble.map((tipo, index) => (
+                      <option key={index} value={tipo}>
+                        {tipo}
+                      </option>
+                    ))}
+                  </select>
+                  <select
+                    name="ubicacion"
+                    value={filtros.ubicacion}
+                    onChange={handleChange}
+                    className={styles.selectFiltro}
+                  >
+                    <option value="">Barrio</option>
+                    {barrios.map((barrio, index) => (
+                      <option key={index} value={barrio}>
+                        {barrio}
+                      </option>
+                    ))}
+                  </select>
                   <div className={styles.precio}>
-                    <div className={styles.h4_price}>
-                      <h4>Precio:</h4>
-                    </div>
                     <div className={styles.inputs_price}>
                       <span className={styles.currency}>USD</span>
-                      <input type="text" placeholder="Desde" />
+                      <input className={styles.selectFiltro2} type="text" placeholder="Desde" />
                       <span className={styles.currency}>USD</span>
-                      <input type="text" placeholder="Hasta" />
+                      <input className={styles.selectFiltro2} type="text" placeholder="Hasta" />
                     </div>
                   </div>
                 </div>
               )}
               {activeTab === 1 && (
                 <div className={styles.h4_container}>
-                  <input type="text" placeholder="Tipo de Propiedad" />
-                  <input type="text" placeholder="Ciudades o Barrios" />
-                  <div className={styles.precio}>
-                    <div className={styles.h4_price}>
-                      <h4>Precio:</h4>
-                    </div>
-                    <div className={styles.inputs_price}>
-                      <span className={styles.currency}>ARS</span>
-                      <input type="text" placeholder="Desde" />
-                      <span className={styles.currency}>ARS</span>
-                      <input type="text" placeholder="Hasta" />
-                    </div>
+                <select
+                  name="tipo"
+                  value={filtros.tipo}
+                  onChange={handleChange}
+                  className={styles.selectFiltro}
+                >
+                  <option value="">Tipo de Propiedad</option>
+                  {tipoInmueble.map((tipo, index) => (
+                    <option key={index} value={tipo}>
+                      {tipo}
+                    </option>
+                  ))}
+                </select>
+                <select
+                  name="ubicacion"
+                  value={filtros.ubicacion}
+                  onChange={handleChange}
+                  className={styles.selectFiltro}
+                >
+                  <option value="">Barrio</option>
+                  {barrios.map((barrio, index) => (
+                    <option key={index} value={barrio}>
+                      {barrio}
+                    </option>
+                  ))}
+                </select>
+                <div className={styles.precio}>
+                  <div className={styles.inputs_price}>
+                    <span className={styles.currency}>ARS</span>
+                    <input className={styles.selectFiltro2} type="text" placeholder="Desde" />
+                    <span className={styles.currency}>ARS</span>
+                    <input className={styles.selectFiltro2} type="text" placeholder="Hasta" />
                   </div>
                 </div>
+              </div>
               )}
               {activeTab === 2 && (
                 <div className={styles.h4_container}>
-                  <input type="text" placeholder="Tipo de Propiedad" />
-                  <input type="text" placeholder="Ciudades o Barrios" />
-                  <div className={styles.precio}>
-                    <div className={styles.h4_price}>
-                      <h4>Precio:</h4>
-                    </div>
-                    <div className={styles.inputs_price}>
-                      <span className={styles.currency}>USD</span>
-                      <input type="text" placeholder="Desde" />
-                      <span className={styles.currency}>USD</span>
-                      <input type="text" placeholder="Hasta" />
-                    </div>
+                <select
+                  name="tipo"
+                  value={filtros.tipo}
+                  onChange={handleChange}
+                  className={styles.selectFiltro}
+                >
+                  <option value="">Tipo de Propiedad</option>
+                  {tipoInmueble.map((tipo, index) => (
+                    <option key={index} value={tipo}>
+                      {tipo}
+                    </option>
+                  ))}
+                </select>
+                <select
+                  name="ubicacion"
+                  value={filtros.ubicacion}
+                  onChange={handleChange}
+                  className={styles.selectFiltro}
+                >
+                  <option value="">Barrio</option>
+                  {barrios.map((barrio, index) => (
+                    <option key={index} value={barrio}>
+                      {barrio}
+                    </option>
+                  ))}
+                </select>
+                <div className={styles.precio}>
+                  <div className={styles.inputs_price}>
+                    <span className={styles.currency}>USD</span>
+                    <input className={styles.selectFiltro2} type="text" placeholder="Desde" />
+                    <span className={styles.currency}>USD</span>
+                    <input className={styles.selectFiltro2} type="text" placeholder="Hasta" />
                   </div>
                 </div>
+              </div>
               )}
             </div>
-            <button className={styles.btn}>Buscar</button>
+            <button className={styles.btn} onClick={handleSearch}>Buscar</button>
           </div>
         </div>
       </div>
       <div className={styles.box_container}>
         <Link className={styles.recuadro} to="/tasaciones">
           <div className={styles.recuadro}>
-            <FaCalculator  className={styles.icon} /> {/* Ícono de la casa */}
+            <FaCalculator className={styles.icon} /> {/* Ícono de la casa */}
             <h4>Tasar Con Un Profesional</h4>
             <p>
               El primer paso para que puedas vender o alquilar tu propiedad.
@@ -116,14 +230,14 @@ const Home = () => {
         </Link>
         <Link className={styles.recuadro} to="/contacto">
           <div className={styles.recuadro}>
-            <FaPhone  className={styles.icon} /> {/* Ícono de la casa */}
+            <FaPhone className={styles.icon} /> {/* Ícono de la casa */}
             <h4>Contactanos</h4>
             <p>Entérate de todas las opciones disponibles en CABA. </p>
           </div>
         </Link>
         <Link className={styles.recuadro} to="/novedades">
           <div className={styles.recuadro}>
-            <FaRegNewspaper  className={styles.icon} /> {/* Ícono de la casa */}
+            <FaRegNewspaper className={styles.icon} /> {/* Ícono de la casa */}
             <h4>Enterate Nuestras Novedades</h4>
             <p>
               Conocé nuestra ultimas novedades y nuevas leyes inmobiliarias.

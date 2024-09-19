@@ -10,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import edificios from "../assets/vecteezy_city-background-illustration-black_22227434.png";
 
+
 const Comprar = () => {
   const dispatch = useDispatch();
 
@@ -84,9 +85,9 @@ const Comprar = () => {
       operacion: "Venta",
     });
     dispatch(emptyStates());
+    setSortCriteria("")
     extractUniqueBarrios();
     extractUniqueTipos();
-    setSortCriteria("")
   };
 
   const aplicarFiltro = () => {
@@ -203,7 +204,6 @@ const Comprar = () => {
             <option value="masambientes">Más Ambientes</option>
           </select>
         </div>
-
         <div className={styles.cards}>
           {propiedadesOrdenadas.map((propiedad) => (
             <div key={propiedad.id} className={styles.card}>
