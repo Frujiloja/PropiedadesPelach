@@ -1,4 +1,5 @@
 .comprar_container {
+  min-height: 95vh;
   height: 100%;
   width: 100%;
   position: relative;
@@ -130,6 +131,9 @@
 }
 
 .botonBuscar2 {
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  justify-content: center; /* Centra el texto horizontalmente */
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: none;
@@ -140,6 +144,7 @@
   transition: background-color 0.3s ease;
   height: 5vh;
 }
+
 
 .botonBuscar2:hover {
   background-color: #6b6b6b;

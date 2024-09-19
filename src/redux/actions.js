@@ -2,6 +2,8 @@ export const GET_PROPIEDADES = "GET_PROPIEDADES";
 export const GET_PROPIEDADES_VENTA = "GET_PROPIEDADES_VENTA";
 export const GET_PROPIEDADES_ALQUILER = "GET_PROPIEDADES_ALQUILER";
 export const GET_PROPIEDADES_DESARROLLO = "GET_PROPIEDADES_DESARROLLO";
+export const APLICAR_FILTROS = "APLICAR_FILTROS";
+export const EMPTY_STATES = "EMPTY_STATES";
 import propertiesData from '../ProductsDB.json'; // Ajusta la ruta según la ubicación real del archivo
 
 export const getPropiedades = () => {
@@ -51,3 +53,16 @@ export const getPropiedadesDesarrollo = () => {
         }
     };
 };
+
+export const aplicarFiltros = (filtros) => {
+    return {
+      type: APLICAR_FILTROS,
+      payload: filtros
+    };
+  };
+
+  export const emptyStates = () => {
+    return {
+      type: EMPTY_STATES,
+    };
+  };
