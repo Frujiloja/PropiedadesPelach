@@ -46,6 +46,7 @@
   height: 100vh;
 }
 
+
 .card {
   background-color: #fff; /* Fondo blanco para las cards */
   border-radius: 8px; /* Bordes redondeados */
@@ -54,14 +55,14 @@
   margin: 10px; /* Espaciado entre cards */
   display: flex; /* Flexbox para alinear contenido horizontalmente */
   align-items: center; /* Alinear contenido verticalmente al centro */
-  height: 25vh;
+  height: 45vh;
   border: 1px solid rgb(198, 198, 198);
   position: relative;
 }
 
 .card img {
-  width: 400px; /* Ajusta el ancho según tus necesidades */
-  height: 25vh; /* Ajusta la altura según tus necesidades */
+  width: 35%; /* Ajusta el ancho según tus necesidades */
+  height: 45vh; /* Ajusta la altura según tus necesidades */
   object-fit: cover; /* Mantiene la proporción de la imagen y cubre el área del contenedor */
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -175,6 +176,9 @@
 
 .botonContactar {
   background-color: #3d3d3d; /* Color de fondo del botón Contactar */
+  width: 105px;
+  display: flex;
+  justify-content: center;
 }
 
 .botonContactar:hover {

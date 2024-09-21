@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Banner from "../assets/Banner.gif";
 import logogif from "../assets/cucicba-logo.gif";
 import { useDispatch, useSelector } from "react-redux";
-import { getPropiedades } from "../redux/actions";
+import { getPropiedades, aplicarFiltrosHome, emptyHome } from "../redux/actions";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -15,22 +15,29 @@ const Home = () => {
 
   const [barrios, setBarrios] = useState([]);
   const [tipoInmueble, settipoInmueble] = useState([]);
-
+  
+  const extractUniqueBarrios = () => {
+    const barriosUnicos = [
+      ...new Set(propiedades.map((prop) => prop.ubicacion)),
+    ];
+    setBarrios(barriosUnicos);
+  };
+  const extractUniqueTipos = () => {
+    const tiposUnicos = [...new Set(propiedades.map((prop) => prop.tipo))];
+    settipoInmueble(tiposUnicos);
+  };
+  
   useEffect(() => {
-    dispatch(getPropiedades()); //me traigo las propiedades
-    const extractUniqueBarrios = () => {
-      const barriosUnicos = [
-        ...new Set(propiedades.map((prop) => prop.ubicacion)),
-      ];
-      setBarrios(barriosUnicos);
-    };
-    const extractUniqueTipos = () => {
-      const tiposUnicos = [...new Set(propiedades.map((prop) => prop.tipo))];
-      settipoInmueble(tiposUnicos);
-    };
-    extractUniqueBarrios();
-    extractUniqueTipos();
+    dispatch(getPropiedades()); // Trae las propiedades
+    dispatch(emptyHome())
   }, [dispatch]);
+  
+  useEffect(() => {
+    if (propiedades.length > 0) {
+      extractUniqueBarrios();
+      extractUniqueTipos();
+    }
+  }, [propiedades]); // Solo se ejecuta cuando 'propiedades' cambie
 
   const [activeTab, setActiveTab] = useState(0);
 
@@ -42,10 +49,8 @@ const Home = () => {
   const [filtros, setFiltros] = useState({
     ubicacion: "",
     tipo: "",
-    ambientes: "",
     precioMin: "",
     precioMax: "",
-    operacion: "Venta",
   });
 
   const handleChange = (e) => {
@@ -59,12 +64,21 @@ const Home = () => {
     let url;
     switch (activeTab) {
       case 0:
+        console.log(filtros)
+        const filtrosConVenta = { ...filtros, operacion: "Venta" };
+        dispatch(aplicarFiltrosHome(filtrosConVenta))
         url = "/comprar"; // URL para la pestaña "Comprar"
         break;
       case 1:
+        console.log(filtros)
+        const filtrosConAlquiler = { ...filtros, operacion: "Alquiler" };
+        dispatch(aplicarFiltrosHome(filtrosConAlquiler))
         url = "/alquilar"; // URL para la pestaña "Alquilar"
         break;
       case 2:
+        console.log(filtros)
+        const filtrosConDesarrollo = { ...filtros, operacion: "Desarrollo" };
+        dispatch(aplicarFiltrosHome(filtrosConDesarrollo))
         url = "/desarrollos"; // URL para la pestaña "Desarrollos"
         break;
       default:
@@ -80,7 +94,7 @@ const Home = () => {
           <div className={styles.container}>
             {/* Contenedor de las pestañas */}
             <div className={styles.tabs}>
-              {["Comprar", "Alquilar", "Desarrollos"].map((tabLabel, index) => (
+              {["Comprar", "Alquilar"].map((tabLabel, index) => (
                 <button
                   key={index}
                   className={`${styles.tab} ${
@@ -130,9 +144,9 @@ const Home = () => {
                   <div className={styles.precio}>
                     <div className={styles.inputs_price}>
                       <span className={styles.currency}>USD</span>
-                      <input className={styles.selectFiltro2} type="text" placeholder="Desde" />
+                      <input onChange={handleChange} name="precioMin" value={filtros.precioMin} className={styles.selectFiltro2} type="text" placeholder="Desde" />
                       <span className={styles.currency}>USD</span>
-                      <input className={styles.selectFiltro2} type="text" placeholder="Hasta" />
+                      <input onChange={handleChange} name="precioMax" value={filtros.precioMax} className={styles.selectFiltro2} type="text" placeholder="Hasta" />
                     </div>
                   </div>
                 </div>
@@ -166,16 +180,16 @@ const Home = () => {
                   ))}
                 </select>
                 <div className={styles.precio}>
-                  <div className={styles.inputs_price}>
-                    <span className={styles.currency}>ARS</span>
-                    <input className={styles.selectFiltro2} type="text" placeholder="Desde" />
-                    <span className={styles.currency}>ARS</span>
-                    <input className={styles.selectFiltro2} type="text" placeholder="Hasta" />
-                  </div>
+                <div className={styles.inputs_price}>
+                      <span className={styles.currency}>USD</span>
+                      <input onChange={handleChange} name="precioMin" value={filtros.precioMin} className={styles.selectFiltro2} type="text" placeholder="Desde" />
+                      <span className={styles.currency}>USD</span>
+                      <input onChange={handleChange} name="precioMax" value={filtros.precioMax} className={styles.selectFiltro2} type="text" placeholder="Hasta" />
+                    </div>
                 </div>
               </div>
               )}
-              {activeTab === 2 && (
+              {/* {activeTab === 2 && (
                 <div className={styles.h4_container}>
                 <select
                   name="tipo"
@@ -204,15 +218,15 @@ const Home = () => {
                   ))}
                 </select>
                 <div className={styles.precio}>
-                  <div className={styles.inputs_price}>
-                    <span className={styles.currency}>USD</span>
-                    <input className={styles.selectFiltro2} type="text" placeholder="Desde" />
-                    <span className={styles.currency}>USD</span>
-                    <input className={styles.selectFiltro2} type="text" placeholder="Hasta" />
-                  </div>
+                <div className={styles.inputs_price}>
+                      <span className={styles.currency}>USD</span>
+                      <input onChange={handleChange} name="precioMin" value={filtros.precioMin} className={styles.selectFiltro2} type="text" placeholder="Desde" />
+                      <span className={styles.currency}>USD</span>
+                      <input onChange={handleChange} name="precioMax" value={filtros.precioMax} className={styles.selectFiltro2} type="text" placeholder="Hasta" />
+                    </div>
                 </div>
               </div>
-              )}
+              )} */}
             </div>
             <button className={styles.btn} onClick={handleSearch}>Buscar</button>
           </div>
@@ -224,7 +238,7 @@ const Home = () => {
             <FaCalculator className={styles.icon} /> {/* Ícono de la casa */}
             <h4>Tasar Con Un Profesional</h4>
             <p>
-              El primer paso para que puedas vender o alquilar tu propiedad.
+              Te ayudamos a que puedas vender o alquilar tu propiedad.
             </p>
           </div>
         </Link>

@@ -1,15 +1,16 @@
 import styles from "./Comprar.module.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   getPropiedadesVenta,
   aplicarFiltros,
   getPropiedades,
   emptyStates,
+  emptyHome,
+  aplicarFiltrosHome,
 } from "../redux/actions";
 import { Link } from "react-router-dom";
 import edificios from "../assets/vecteezy_city-background-illustration-black_22227434.png";
-
 
 const Comprar = () => {
   const dispatch = useDispatch();
@@ -17,33 +18,49 @@ const Comprar = () => {
   const [barrios, setBarrios] = useState([]);
   const [tipoInmueble, settipoInmueble] = useState([]);
   const [sortCriteria, setSortCriteria] = useState("");
-
-  useEffect(() => {
-    dispatch(getPropiedades()); //me traigo las propiedades
-    dispatch(getPropiedadesVenta()); //me traigo las propiedades
-    const extractUniqueBarrios = () => {
-      const barriosUnicos = [
-        ...new Set(propiedades.map((prop) => prop.ubicacion)),
-      ];
-      setBarrios(barriosUnicos);
-    };
-    const extractUniqueTipos = () => {
-      const tiposUnicos = [...new Set(propiedades.map((prop) => prop.tipo))];
-      settipoInmueble(tiposUnicos);
-    };
-    extractUniqueBarrios();
-    extractUniqueTipos();
-  }, [dispatch]);
+  const [filtrosAplicados, setFiltrosAplicados] = useState(false);
 
   const propiedades = useSelector((state) => state.propiedadesVenta);
+  const propiedadesHome = useSelector(
+    (state) => state.propiedadesFiltradasHome
+  );
   const propiedadesFiltradas = useSelector(
     (state) => state.propiedadesFiltradas
   );
 
-  const phoneNumber = "5491152280786"; // Reemplaza con el número de teléfono real
-  const message = "Hola, me interesa más información"; // Mensaje predeterminado (opcional)
+  // Extraer barrios y tipos únicos
+  const extractUniqueBarrios = useCallback(() => {
+    if (propiedades && propiedades.length > 0) {
+      const barriosUnicos = [
+        ...new Set(propiedades.map((prop) => prop.ubicacion)),
+      ];
+      setBarrios(barriosUnicos);
+    }
+  }, [propiedades]);
 
-  const handleClick = () => {
+  const extractUniqueTipos = useCallback(() => {
+    if (propiedades && propiedades.length > 0) {
+      const tiposUnicos = [...new Set(propiedades.map((prop) => prop.tipo))];
+      settipoInmueble(tiposUnicos);
+    }
+  }, [propiedades]);
+
+  useEffect(() => {
+    console.log(propiedadesHome);
+    dispatch(getPropiedades()); //me traigo las propiedades
+    dispatch(getPropiedadesVenta()); //me traigo las propiedades
+  }, [dispatch]);
+
+  useEffect(() => {
+    extractUniqueBarrios();
+    extractUniqueTipos();
+  }, [extractUniqueBarrios, extractUniqueTipos]);
+
+  const phoneNumber = "5491152280786"; // Reemplaza con el número de teléfono real
+
+  // Función para manejar clic en WhatsApp con mensaje específico de la propiedad
+  const handleClick = (propiedad) => {
+    const message = `Hola, me interesa más información sobre la propiedad ubicada en ${propiedad.ubicacion} con un precio de USD ${propiedad.precio}.`;
     window.open(
       `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
       "_blank"
@@ -85,17 +102,21 @@ const Comprar = () => {
       operacion: "Venta",
     });
     dispatch(emptyStates());
-    setSortCriteria("")
+    dispatch(emptyHome());
+    setSortCriteria("");
+    setFiltrosAplicados(false);
     extractUniqueBarrios();
     extractUniqueTipos();
   };
 
   const aplicarFiltro = () => {
     dispatch(aplicarFiltros(filtros));
+    dispatch(aplicarFiltrosHome(filtros));
+    setFiltrosAplicados(true);
   };
 
   // Función para ordenar las propiedades
-  const sortProperties = (properties, criteria) => {
+  const sortProperties = useCallback((properties, criteria) => {
     switch (criteria) {
       case "menorprecio":
         return [...properties].sort((a, b) => a.precio - b.precio);
@@ -108,13 +129,25 @@ const Comprar = () => {
       default:
         return properties;
     }
-  };
+  }, []);
 
   // Aplicar ordenamiento
-  const propiedadesOrdenadas = sortProperties(
-    propiedadesFiltradas.length === 0 ? propiedades : propiedadesFiltradas,
-    sortCriteria
-  );
+  const propiedadesOrdenadas = useMemo(() => {
+    const source =
+      propiedadesHome.length > 0
+        ? propiedadesHome
+        : filtrosAplicados
+        ? propiedadesFiltradas
+        : propiedades;
+    return sortProperties(source, sortCriteria);
+  }, [
+    propiedades,
+    propiedadesFiltradas,
+    sortProperties,
+    propiedadesHome,
+    sortCriteria,
+    filtrosAplicados,
+  ]);
 
   const handleSortChange = (e) => {
     setSortCriteria(e.target.value);
@@ -205,41 +238,97 @@ const Comprar = () => {
           </select>
         </div>
         <div className={styles.cards}>
-          {propiedadesOrdenadas.map((propiedad) => (
-            <div key={propiedad.id} className={styles.card}>
-              <img src={propiedad.imagen} alt="foto propiedad" />
-              <div className={styles.card_content}>
-                <h2>USD {propiedad.precio}</h2>
-                <p className={styles.p_card}>
-                  <strong>Ubicación: </strong>
-                  {propiedad.ubicacion}
-                </p>
-                <p className={styles.p_card}>
-                  <strong>Tipo:</strong> {propiedad.tipo}
-                </p>
-                <p className={styles.p_card}>
-                  <strong>Ambientes:</strong> {propiedad.ambientes}
-                </p>
-                <p className={styles.p_card}>
-                  <strong>Metros Totales:</strong> {propiedad.metros}
-                </p>
-                <p className={styles.p_card}>
-                  {truncateText(propiedad.descripcion, 100)}
-                </p>
+          {propiedadesHome > 0 ? (
+            propiedadesHome
+          ) : filtrosAplicados ? (
+            propiedadesFiltradas.length > 0 ? (
+              propiedadesOrdenadas.map((propiedad) => (
+                <div key={propiedad.id} className={styles.card}>
+                  <img
+                    src={propiedad.imagen}
+                    alt={`Propiedad en ${propiedad.ubicacion}`}
+                  />
+                  <div className={styles.card_content}>
+                    <h2>USD {propiedad.precio.toLocaleString()}</h2>
+                    <p className={styles.p_card}>
+                      <strong>Ubicación: </strong>
+                      {propiedad.ubicacion}
+                    </p>
+                    <p className={styles.p_card}>
+                      <strong>Tipo:</strong> {propiedad.tipo}
+                    </p>
+                    <p className={styles.p_card}>
+                      <strong>Ambientes:</strong> {propiedad.ambientes}
+                    </p>
+                    <p className={styles.p_card}>
+                      <strong>Metros Totales:</strong> {propiedad.metros}
+                    </p>
+                    <p className={styles.p_card}>
+                      {truncateText(propiedad.descripcion, 100)}
+                    </p>
+                  </div>
+                  <div className={styles.card_buttons}>
+                    <button
+                      className={styles.botonWhatsapp}
+                      onClick={() => handleClick(propiedad)}
+                    >
+                      WhatsApp <i className="fab fa-whatsapp"></i>
+                    </button>
+                    <Link to={`/detail/${propiedad.id}`} className={styles.botonContactar}>Ver Detalle</Link>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <div className={styles.none}>
+                <h2>No se han encontrado propiedades</h2>
+                <p>Prueba ajustando los filtros o busca en otra ubicación.</p>
               </div>
-              <div className={styles.card_buttons}>
-                <button className={styles.botonWhatsapp} onClick={handleClick}>
-                  WhatsApp<i className="fab fa-whatsapp"></i>
-                </button>
-                <Link to="/contacto" className={styles.botonContactar}>
-                  Contactar <i className="fas fa-envelope"></i>
-                </Link>
+            )
+          ) : (
+            propiedadesOrdenadas.map((propiedad) => (
+              <div key={propiedad.id} className={styles.card}>
+                <img
+                  src={propiedad.imagen}
+                  alt={`Propiedad en ${propiedad.ubicacion}`}
+                />
+                <div className={styles.card_content}>
+                  <h2>USD {propiedad.precio.toLocaleString()}</h2>
+                  <p className={styles.p_card}>
+                    <strong>Ubicación: </strong>
+                    {propiedad.ubicacion}
+                  </p>
+                  <p className={styles.p_card}>
+                    <strong>Tipo:</strong> {propiedad.tipo}
+                  </p>
+                  <p className={styles.p_card}>
+                    <strong>Ambientes:</strong> {propiedad.ambientes}
+                  </p>
+                  <p className={styles.p_card}>
+                    <strong>Metros Totales:</strong> {propiedad.metros}
+                  </p>
+                  <p className={styles.p_card}>
+                    {truncateText(propiedad.descripcion, 100)}
+                  </p>
+                </div>
+                <div className={styles.card_buttons}>
+                  <button
+                    className={styles.botonWhatsapp}
+                    onClick={() => handleClick(propiedad)}
+                  >
+                    WhatsApp <i className="fab fa-whatsapp"></i>
+                  </button>
+                  <Link to={`/detail/${propiedad.id}`} className={styles.botonContactar}>Ver Detalle</Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          )}
         </div>
       </div>
-      <img className={styles.edificios} src={edificios} alt="edificios" />
+      <img
+        className={styles.edificios}
+        src={edificios}
+        alt="Fondo de edificios"
+      />
     </div>
   );
 };

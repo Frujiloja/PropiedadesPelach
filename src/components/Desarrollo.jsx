@@ -38,7 +38,7 @@ const Desarrollo = () => {
   return (
     <div className={styles.desarrollo_container}>
       <div className={styles.cards_filter}>
-        <div className={styles.filtros}>
+        {/* <div className={styles.filtros}>
           <select className={styles.selectFiltro}>
             <option value="">Barrio</option>
             <option value="palermo">Palermo</option>
@@ -78,7 +78,7 @@ const Desarrollo = () => {
           />
           <button className={styles.botonBuscar}>Buscar</button>
           <button className={styles.botonBuscar2}>Limpiar Filtros</button>
-        </div>
+        </div> */}
         <div className={styles.cards}>
           {propiedades.map((propiedad) => (
             <div key={propiedad.id} className={styles.card}>
@@ -96,7 +96,7 @@ const Desarrollo = () => {
                   <strong>Metros Totales:</strong> {propiedad.metros}
                 </p>
                 <p className={styles.p_card}>
-                  {truncateText(propiedad.descripcion, 100)}{" "}
+                  {propiedad.descripcion}
                   {/* Ajusta el número de caracteres según sea necesario */}
                 </p>
               </div>
@@ -104,9 +104,10 @@ const Desarrollo = () => {
                 <button className={styles.botonWhatsapp} onClick={handleClick}>
                   WhatsApp<i className="fab fa-whatsapp"></i>
                 </button>
-                <Link to="/contacto" className={styles.botonContactar}>
+                {/* <Link to="/contacto" className={styles.botonContactar}>
                   Contactar <i className="fas fa-envelope"></i>
-                </Link>
+                </Link> */}
+                <Link to={`/detail/${propiedad.id}`} className={styles.botonContactar}>Ver Detalle</Link>
               </div>
             </div>
           ))}

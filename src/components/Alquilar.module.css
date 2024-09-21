@@ -97,6 +97,32 @@
   height: 5vh;
 }
 
+.none {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px dashed #0b9451;
+  border-radius: 10px;
+  background-color: #fff3f3;
+  color: #0b9451;
+  margin: 40px auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.none h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.none p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+}
+
 .inputFiltro {
   padding: 0.5rem;
   font-size: 1rem;
