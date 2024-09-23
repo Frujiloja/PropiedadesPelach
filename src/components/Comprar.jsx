@@ -19,6 +19,7 @@ const Comprar = () => {
   const [tipoInmueble, settipoInmueble] = useState([]);
   const [sortCriteria, setSortCriteria] = useState("");
   const [filtrosAplicados, setFiltrosAplicados] = useState(false);
+  const busquedaRealizada = useSelector((state) => state.busquedaRealizada);
 
   const propiedades = useSelector((state) => state.propiedadesVenta);
   const propiedadesHome = useSelector(
@@ -238,14 +239,19 @@ const Comprar = () => {
           </select>
         </div>
         <div className={styles.cards}>
-          {propiedadesHome > 0 ? (
+          {busquedaRealizada && propiedadesHome.length === 0 ? (
+              <div className={styles.none}>
+              <h2>No se han encontrado propiedades</h2>
+              <p>Prueba ajustando los filtros o busca en otra ubicación.</p>
+            </div>):(
+          propiedadesHome > 0 ? (
             propiedadesHome
           ) : filtrosAplicados ? (
             propiedadesFiltradas.length > 0 ? (
               propiedadesOrdenadas.map((propiedad) => (
                 <div key={propiedad.id} className={styles.card}>
                   <img
-                    src={propiedad.imagen}
+                    src={propiedad.imagen[0]}
                     alt={`Propiedad en ${propiedad.ubicacion}`}
                   />
                   <div className={styles.card_content}>
@@ -274,7 +280,12 @@ const Comprar = () => {
                     >
                       WhatsApp <i className="fab fa-whatsapp"></i>
                     </button>
-                    <Link to={`/detail/${propiedad.id}`} className={styles.botonContactar}>Ver Detalle</Link>
+                    <Link
+                      to={`/detail/${propiedad.id}`}
+                      className={styles.botonContactar}
+                    >
+                      Ver Detalle
+                    </Link>
                   </div>
                 </div>
               ))
@@ -288,7 +299,7 @@ const Comprar = () => {
             propiedadesOrdenadas.map((propiedad) => (
               <div key={propiedad.id} className={styles.card}>
                 <img
-                  src={propiedad.imagen}
+                  src={propiedad.imagen[0]}
                   alt={`Propiedad en ${propiedad.ubicacion}`}
                 />
                 <div className={styles.card_content}>
@@ -317,10 +328,15 @@ const Comprar = () => {
                   >
                     WhatsApp <i className="fab fa-whatsapp"></i>
                   </button>
-                  <Link to={`/detail/${propiedad.id}`} className={styles.botonContactar}>Ver Detalle</Link>
+                  <Link
+                    to={`/detail/${propiedad.id}`}
+                    className={styles.botonContactar}
+                  >
+                    Ver Detalle
+                  </Link>
                 </div>
               </div>
-            ))
+            )))
           )}
         </div>
       </div>

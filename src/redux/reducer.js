@@ -14,6 +14,7 @@ const initialState = {
   propiedadesDesarrollo: [],
   propiedadesFiltradas: [],
   propiedadesFiltradasHome: [],
+  busquedaRealizada: false,
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -148,6 +149,7 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         propiedadesFiltradasHome,
+        busquedaRealizada: true,
       };
     }
 
@@ -161,6 +163,7 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         propiedadesFiltradasHome: [],
+        busquedaRealizada: false,
       };
     default:
       return { ...state };

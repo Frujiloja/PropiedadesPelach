@@ -189,44 +189,6 @@ const Home = () => {
                 </div>
               </div>
               )}
-              {/* {activeTab === 2 && (
-                <div className={styles.h4_container}>
-                <select
-                  name="tipo"
-                  value={filtros.tipo}
-                  onChange={handleChange}
-                  className={styles.selectFiltro}
-                >
-                  <option value="">Tipo de Propiedad</option>
-                  {tipoInmueble.map((tipo, index) => (
-                    <option key={index} value={tipo}>
-                      {tipo}
-                    </option>
-                  ))}
-                </select>
-                <select
-                  name="ubicacion"
-                  value={filtros.ubicacion}
-                  onChange={handleChange}
-                  className={styles.selectFiltro}
-                >
-                  <option value="">Barrio</option>
-                  {barrios.map((barrio, index) => (
-                    <option key={index} value={barrio}>
-                      {barrio}
-                    </option>
-                  ))}
-                </select>
-                <div className={styles.precio}>
-                <div className={styles.inputs_price}>
-                      <span className={styles.currency}>USD</span>
-                      <input onChange={handleChange} name="precioMin" value={filtros.precioMin} className={styles.selectFiltro2} type="text" placeholder="Desde" />
-                      <span className={styles.currency}>USD</span>
-                      <input onChange={handleChange} name="precioMax" value={filtros.precioMax} className={styles.selectFiltro2} type="text" placeholder="Hasta" />
-                    </div>
-                </div>
-              </div>
-              )} */}
             </div>
             <button className={styles.btn} onClick={handleSearch}>Buscar</button>
           </div>

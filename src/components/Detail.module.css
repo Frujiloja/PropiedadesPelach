@@ -1,45 +1,57 @@
 .container {
-    max-width: 800px;
+    max-width: 80%;
     margin:  auto;
     padding: 0 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 95vh;
-  }
-  
-  .backLink {
     display: flex;
     align-items: center;
-    color: #555;
-    text-decoration: none;
-    margin-bottom: 20px;
-    transition: color 0.3s ease;
-  }
-  
-  .backLink:hover {
-    color: #000;
-  }
-  
-  .backIcon {
-    margin-right: 8px;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
   }
   
   .card {
-    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* .propiedad_imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  } */
+
+  .slick-slide img {
+    width: 100%;         
+    height: auto;         
   }
   
-  .image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  .slick-dots {
+    bottom: 10px;       
   }
+
+  .image {
+    height: 65vh;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
   
   .content {
+    background-color: #e7e7e7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
     padding: 20px;
+    width: 50%;
   }
   
   .title {
@@ -52,12 +64,14 @@
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
+    font-weight: 450;
+    text-align: left;
   }
   
   .price {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #2a9d8f;
+    margin-bottom: 10px;
+    font-weight: 400;
   }
   
   .notFound {
@@ -67,3 +81,7 @@
     color: #999;
   }
   
+  .h4 {
+    color: black;
+    font-weight: 450;
+  }

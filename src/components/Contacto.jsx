@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import edificios from "../assets/vecteezy_city-background-illustration-black_22227434.png";
 import logo from "../assets/only logo.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import emailjs from 'emailjs-com';
+
 
 const Contacto = () => {
   const position = [-34.572766, -58.421053]; // Coordenadas de Buenos Aires (ejemplo)
@@ -23,6 +25,16 @@ const Contacto = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    emailjs.send('service_fcnnvtf', 'template_bwaptb9', formData, '1sBpeKaGLYovogvqY')
+    .then((result) => {
+      alert('Correo enviado con éxito!');
+      console.log(result.text);
+      // Limpia el formulario
+      setFormData({ name: '', email: '', message: '' });
+    }, (error) => {
+      alert('Hubo un problema al enviar el correo. Intenta de nuevo.');
+      console.log(error.text);
+    });
     console.log("Formulario enviado", formData);
   };
 

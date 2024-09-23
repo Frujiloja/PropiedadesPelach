@@ -2,6 +2,8 @@ import styles from "./Vender.module.css";
 import React, { useState } from "react";
 import edificios from "../assets/vecteezy_city-background-illustration-black_22227434.png";
 import banner from "../assets/banner tasacion.jpg";
+import emailjs from 'emailjs-com';
+
 
 
 
@@ -10,8 +12,8 @@ const Vender = () => {
     name: "",
     phone: "",
     email: "",
-    option: "vender",
-    propertyType: "casa",
+    option: "",
+    propertyType: "",
     comment: "",
   });
 
@@ -24,6 +26,16 @@ const Vender = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    emailjs.send('service_fcnnvtf', 'template_x9w5zw4', formData, '1sBpeKaGLYovogvqY')
+    .then((result) => {
+      alert('Correo enviado con éxito!');
+      console.log(result.text);
+      // Limpia el formulario
+      setFormData({ name: '', email: '', message: '' });
+    }, (error) => {
+      alert('Hubo un problema al enviar el correo. Intenta de nuevo.');
+      console.log(error.text);
+    });
     console.log("Formulario enviado", formData);
   };
 
@@ -95,18 +107,13 @@ const Vender = () => {
 
           <div className={styles.form_group}>
             <label>Tipo de Inmueble</label>
-            <select
+            <input
               name="propertyType"
               value={formData.propertyType}
               onChange={handleChange}
               required
               className={styles.form_input}
-            >
-              <option value="casa">Casa</option>
-              <option value="departamento">Departamento</option>
-              <option value="local">Local</option>
-              <option value="terreno">Terreno</option>
-            </select>
+            />
           </div>
 
           <div className={styles.form_group}>
