@@ -30,7 +30,7 @@ const Desarrollo = () => {
 
   const truncateText = (text, maxLength) => {
     if (text.length > maxLength) {
-      return text.substring(0, maxLength) + '...';
+      return text.substring(0, maxLength) + "...";
     }
     return text;
   };
@@ -38,54 +38,22 @@ const Desarrollo = () => {
   return (
     <div className={styles.desarrollo_container}>
       <div className={styles.cards_filter}>
-        {/* <div className={styles.filtros}>
-          <select className={styles.selectFiltro}>
-            <option value="">Barrio</option>
-            <option value="palermo">Palermo</option>
-            <option value="belgrano">Belgrano</option>
-            <option value="recoleta">Recoleta</option>
-            <option value="caballito">Caballito</option>
-          </select>
-
-          <select className={styles.selectFiltro}>
-            <option value="">Tipo de Propiedad</option>
-            <option value="departamento">Departamento</option>
-            <option value="casa">Casa</option>
-            <option value="ph">PH</option>
-            <option value="duplex">Dúplex</option>
-          </select>
-
-          <select className={styles.selectFiltro}>
-            <option value="">Cantidad de Ambientes</option>
-            <option value="1">1 Ambiente</option>
-            <option value="2">2 Ambientes</option>
-            <option value="3">3 Ambientes</option>
-            <option value="4">4 o más Ambientes</option>
-          </select>
-
-          <input
-            type="number"
-            className={styles.inputFiltro}
-            placeholder="Precio Mínimo"
-            min="0"
-          />
-
-          <input
-            type="number"
-            className={styles.inputFiltro}
-            placeholder="Precio Máximo"
-            min="0"
-          />
-          <button className={styles.botonBuscar}>Buscar</button>
-          <button className={styles.botonBuscar2}>Limpiar Filtros</button>
-        </div> */}
         <div className={styles.cards}>
           {propiedades.map((propiedad) => (
             <div key={propiedad.id} className={styles.card}>
-              <img src={propiedad.imagen} alt="foto propiedad" />
+              <Link to={`/detail/${propiedad.id}`} className={styles.img}>
+                <img
+                  src={propiedad.imagen[0]}
+                  alt={`Propiedad en ${propiedad.ubicacion}`}
+                  className={styles.img2}
+                />
+              </Link>
               <div className={styles.card_content}>
                 <h2>USD {propiedad.precio}</h2>
-                <p className={styles.p_card}><strong>Dirección: </strong>{propiedad.direccion}</p>
+                <p className={styles.p_card}>
+                  <strong>Dirección: </strong>
+                  {propiedad.direccion}
+                </p>
                 <p className={styles.p_card}>
                   <strong>Tipo:</strong> {propiedad.tipo}
                 </p>
@@ -107,7 +75,12 @@ const Desarrollo = () => {
                 {/* <Link to="/contacto" className={styles.botonContactar}>
                   Contactar <i className="fas fa-envelope"></i>
                 </Link> */}
-                <Link to={`/detail/${propiedad.id}`} className={styles.botonContactar}>Ver Detalle</Link>
+                <Link
+                  to={`/detail/${propiedad.id}`}
+                  className={styles.botonContactar}
+                >
+                  Ver Detalle
+                </Link>
               </div>
             </div>
           ))}

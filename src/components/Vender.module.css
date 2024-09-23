@@ -77,6 +77,7 @@
     transition: all 0.3s ease;
     height: 40px;
     box-sizing: border-box; /* Asegura que padding y borde no afecten el ancho */
+    text-align: center;
   }
   
   .form_input:focus {

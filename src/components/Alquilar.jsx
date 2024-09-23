@@ -19,6 +19,7 @@ const Alquilar = () => {
   const [tipoInmueble, settipoInmueble] = useState([]);
   const [sortCriteria, setSortCriteria] = useState("");
   const [filtrosAplicados, setFiltrosAplicados] = useState(false);
+  const busquedaRealizada = useSelector((state) => state.busquedaRealizada);
 
   const propiedades = useSelector((state) => state.propiedadesAlquiler);
   const propiedadesHome = useSelector(
@@ -238,16 +239,23 @@ const Alquilar = () => {
           </select>
         </div>
         <div className={styles.cards}>
-        {propiedadesHome > 0 ? (
+          {busquedaRealizada && propiedadesHome.length === 0 ? (
+            <div className={styles.none}>
+              <h2>No se han encontrado propiedades</h2>
+              <p>Prueba ajustando los filtros o busca en otra ubicación.</p>
+            </div>
+          ) : propiedadesHome > 0 ? (
             propiedadesHome
           ) : filtrosAplicados ? (
             propiedadesFiltradas.length > 0 ? (
               propiedadesOrdenadas.map((propiedad) => (
                 <div key={propiedad.id} className={styles.card}>
-                  <img
-                    src={propiedad.imagen}
-                    alt={`Propiedad en ${propiedad.ubicacion}`}
-                  />
+                  <Link to={`/detail/${propiedad.id}`}>
+                    <img
+                      src={propiedad.imagen[0]}
+                      alt={`Propiedad en ${propiedad.ubicacion}`}
+                    />
+                  </Link>
                   <div className={styles.card_content}>
                     <h2>USD {propiedad.precio.toLocaleString()}</h2>
                     <p className={styles.p_card}>
@@ -274,8 +282,11 @@ const Alquilar = () => {
                     >
                       WhatsApp <i className="fab fa-whatsapp"></i>
                     </button>
-                    <Link to="/contacto" className={styles.botonContactar}>
-                      Contactar <i className="fas fa-envelope"></i>
+                    <Link
+                      to={`/detail/${propiedad.id}`}
+                      className={styles.botonContactar}
+                    >
+                      Ver Detalle
                     </Link>
                   </div>
                 </div>
@@ -289,10 +300,12 @@ const Alquilar = () => {
           ) : (
             propiedadesOrdenadas.map((propiedad) => (
               <div key={propiedad.id} className={styles.card}>
-                <img
-                  src={propiedad.imagen}
-                  alt={`Propiedad en ${propiedad.ubicacion}`}
-                />
+                  <Link to={`/detail/${propiedad.id}`}>
+                    <img
+                      src={propiedad.imagen[0]}
+                      alt={`Propiedad en ${propiedad.ubicacion}`}
+                    />
+                  </Link>
                 <div className={styles.card_content}>
                   <h2>USD {propiedad.precio.toLocaleString()}</h2>
                   <p className={styles.p_card}>
@@ -319,8 +332,11 @@ const Alquilar = () => {
                   >
                     WhatsApp <i className="fab fa-whatsapp"></i>
                   </button>
-                  <Link to="/contacto" className={styles.botonContactar}>
-                    Contactar <i className="fas fa-envelope"></i>
+                  <Link
+                    to={`/detail/${propiedad.id}`}
+                    className={styles.botonContactar}
+                  >
+                    Ver Detalle
                   </Link>
                 </div>
               </div>

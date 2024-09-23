@@ -250,10 +250,12 @@ const Comprar = () => {
             propiedadesFiltradas.length > 0 ? (
               propiedadesOrdenadas.map((propiedad) => (
                 <div key={propiedad.id} className={styles.card}>
-                  <img
-                    src={propiedad.imagen[0]}
-                    alt={`Propiedad en ${propiedad.ubicacion}`}
-                  />
+                  <Link to={`/detail/${propiedad.id}`}>
+                    <img
+                      src={propiedad.imagen[0]}
+                      alt={`Propiedad en ${propiedad.ubicacion}`}
+                    />
+                  </Link>
                   <div className={styles.card_content}>
                     <h2>USD {propiedad.precio.toLocaleString()}</h2>
                     <p className={styles.p_card}>
@@ -298,10 +300,12 @@ const Comprar = () => {
           ) : (
             propiedadesOrdenadas.map((propiedad) => (
               <div key={propiedad.id} className={styles.card}>
-                <img
-                  src={propiedad.imagen[0]}
-                  alt={`Propiedad en ${propiedad.ubicacion}`}
-                />
+                  <Link to={`/detail/${propiedad.id}`}>
+                    <img
+                      src={propiedad.imagen[0]}
+                      alt={`Propiedad en ${propiedad.ubicacion}`}
+                    />
+                  </Link>
                 <div className={styles.card_content}>
                   <h2>USD {propiedad.precio.toLocaleString()}</h2>
                   <p className={styles.p_card}>
