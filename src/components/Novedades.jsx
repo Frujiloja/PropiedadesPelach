@@ -7,7 +7,7 @@ const Novedades = () => {
   return (
     <div className={styles.novedades_container}>
       <div className={styles.novedades}>
-        <h1>
+        <h1 className={styles.h1_title}>
           La AFIP reafirmó la imposibilidad de compensar Bienes Personales
         </h1>
         <img className={styles.afip} src={afip} alt="afip" />

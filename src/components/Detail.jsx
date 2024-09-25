@@ -2,11 +2,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import styles from "./Detail.module.css"; // Importando estilos CSS Modules
-import { FaArrowLeft } from "react-icons/fa"; // Icono de flecha
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Icono de flecha
 import { useSelector, useDispatch } from "react-redux";
 import { getPropiedades } from "../redux/actions";
-
-
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 
 const Detail = () => {
@@ -24,17 +25,83 @@ const Detail = () => {
   if (!propiedad) {
     return <div className={styles.notFound}>Propiedad no encontrada.</div>;
   }
+  
 
+  // const imageness = [
+  //   "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726174689/106351114779244990764472571167166652704186334829841520574035596302164512939614_y9xwl4.jpg",
+  //   "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116949/3_ptemom.jpg",
+  //   "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116950/8_l6pmkr.jpg"
+  // ];
+
+  const CustomPrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <div className="slick-arrow slick-prev" onClick={onClick}>
+        <FaArrowLeft style={{ color: 'black', fontSize: '20px' }} />
+      </div>
+    );
+  };
+  
+  const CustomNextArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <div className="slick-arrow slick-next" onClick={onClick}>
+        <FaArrowRight style={{ color: 'black', fontSize: '20px' }} />
+      </div>
+    );
+  };
+  
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+  };
+  
 
   return (
     <div className={styles.container}>
+      <Link
+        to={
+          propiedad.operacion === "Venta"
+            ? "/comprar"
+            : propiedad.operacion === "Alquiler"
+            ? "/alquilar"
+            : "/desarrollos"
+        }
+        className={styles.icon}
+      >
+        <FaArrowLeft /> Volver al Listado
+      </Link>
+      <p>volver</p>
       <div className={styles.card}>
-        <img
+      <Slider {...settings} className={styles.image}>
+        {propiedad.imagen.map((image, index) => (
+          <div key={index} className={styles.image}>
+            <img 
+              src={image} 
+              alt={`Slide ${index}`} 
+              style={{ width: '100%', height: 'auto', display: 'block' }} 
+              className={styles.image}
+            />
+          </div>
+        ))}
+      </Slider>
+        {/* <img
           src={propiedad.imagen[0]}
           alt={propiedad.nombre}
           className={styles.image}
-        />
+        /> */}
         <div className={styles.content}>
+          <h1 className={styles.h1title}>
+            {propiedad.tipo} en {propiedad.ubicacion}
+          </h1>
           <h2 className={styles.price}>
             Valor: <strong>USD{propiedad.precio}</strong>
           </h2>
@@ -82,6 +149,36 @@ const Detail = () => {
           <p className={styles.description}>{propiedad.descripcion}</p>
           {/* Puedes agregar más detalles aquí */}
         </div>
+      </div>
+      <div class="info-container" className={styles.div_iconos}>
+        <div class="info-item">
+          <i class="fas fa-home icon"></i>
+          <span class="label">Ambientes: {propiedad.ambientes}</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-bed icon"></i>
+          <span class="label">Dormitorios: {propiedad.dormitorios}</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-bath icon"></i>
+          <span class="label">Baños: {propiedad.baños}</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-clock icon"></i>
+          <span class="label">Antigüedad: {propiedad.antiguedad} años</span>
+        </div>
+      </div>
+      <div className={styles.separador}></div>
+      <div className={styles.mapcontainer}>
+        <iframe
+          src={propiedad.mapa}
+          width="900"
+          height="450"
+          style={{ border: 0 }}
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );

@@ -182,7 +182,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  position: absolute; /* Posiciona los botones sobre la tarjeta */
+
   top: 2.5rem; /* Ajusta el espaciado desde la parte superior */
   right: 3rem; /* Ajusta el espaciado desde el borde derecho */
 }
