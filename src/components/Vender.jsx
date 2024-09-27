@@ -2,10 +2,7 @@ import styles from "./Vender.module.css";
 import React, { useState } from "react";
 import edificios from "../assets/vecteezy_city-background-illustration-black_22227434.png";
 import banner from "../assets/banner tasacion.jpg";
-import emailjs from 'emailjs-com';
-
-
-
+import emailjs from "emailjs-com";
 
 const Vender = () => {
   const [formData, setFormData] = useState({
@@ -26,22 +23,31 @@ const Vender = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.send('service_fcnnvtf', 'template_x9w5zw4', formData, '1sBpeKaGLYovogvqY')
-    .then((result) => {
-      alert('Correo enviado con éxito!');
-      console.log(result.text);
-      // Limpia el formulario
-      setFormData({ name: '', email: '', message: '' });
-    }, (error) => {
-      alert('Hubo un problema al enviar el correo. Intenta de nuevo.');
-      console.log(error.text);
-    });
+    emailjs
+      .send(
+        "service_fcnnvtf",
+        "template_x9w5zw4",
+        formData,
+        "1sBpeKaGLYovogvqY"
+      )
+      .then(
+        (result) => {
+          alert("Correo enviado con éxito!");
+          console.log(result.text);
+          // Limpia el formulario
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          alert("Hubo un problema al enviar el correo. Intenta de nuevo.");
+          console.log(error.text);
+        }
+      );
     console.log("Formulario enviado", formData);
   };
 
   return (
     <div className={styles.contacto_container}>
-        <img src={banner} alt="banner" className={styles.banner} />
+      <img src={banner} alt="banner" className={styles.banner} />
       <div className={styles.contacto}>
         <h1 className={styles.h1}>
           Las operaciones inmobiliarias se inician con una tasación que debe ser

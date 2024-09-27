@@ -5,10 +5,9 @@ import styles from "./Detail.module.css"; // Importando estilos CSS Modules
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Icono de flecha
 import { useSelector, useDispatch } from "react-redux";
 import { getPropiedades } from "../redux/actions";
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Detail = () => {
   const dispatch = useDispatch();
@@ -25,32 +24,25 @@ const Detail = () => {
   if (!propiedad) {
     return <div className={styles.notFound}>Propiedad no encontrada.</div>;
   }
-  
-
-  // const imageness = [
-  //   "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726174689/106351114779244990764472571167166652704186334829841520574035596302164512939614_y9xwl4.jpg",
-  //   "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116949/3_ptemom.jpg",
-  //   "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116950/8_l6pmkr.jpg"
-  // ];
 
   const CustomPrevArrow = (props) => {
     const { onClick } = props;
     return (
       <div className="slick-arrow slick-prev" onClick={onClick}>
-        <FaArrowLeft style={{ color: 'black', fontSize: '20px' }} />
+        <FaArrowLeft style={{ color: "black", fontSize: "20px" }} />
       </div>
     );
   };
-  
+
   const CustomNextArrow = (props) => {
     const { onClick } = props;
     return (
       <div className="slick-arrow slick-next" onClick={onClick}>
-        <FaArrowRight style={{ color: 'black', fontSize: '20px' }} />
+        <FaArrowRight style={{ color: "black", fontSize: "20px" }} />
       </div>
     );
   };
-  
+
   const settings = {
     dots: true,
     infinite: true,
@@ -63,7 +55,6 @@ const Detail = () => {
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
   };
-  
 
   return (
     <div className={styles.container}>
@@ -80,18 +71,18 @@ const Detail = () => {
         <FaArrowLeft /> Volver al Listado
       </Link>
       <div className={styles.card}>
-      <Slider {...settings} className={styles.image}>
-        {propiedad.imagen.map((image, index) => (
-          <div key={index} className={styles.image}>
-            <img 
-              src={image} 
-              alt={`Slide ${index}`} 
-              style={{ width: '100%', height: 'auto', display: 'block' }} 
-              className={styles.image}
-            />
-          </div>
-        ))}
-      </Slider>
+        <Slider {...settings} className={styles.image}>
+          {propiedad.imagen.map((image, index) => (
+            <div key={index} className={styles.image}>
+              <img
+                src={image}
+                alt={`Slide ${index}`}
+                style={{ width: "100%", height: "auto", display: "block" }}
+                className={styles.image}
+              />
+            </div>
+          ))}
+        </Slider>
         {/* <img
           src={propiedad.imagen[0]}
           alt={propiedad.nombre}

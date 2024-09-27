@@ -40,7 +40,7 @@ const Contacto = () => {
 
   return (
     <div className={styles.contacto_container}>
-      <h1>Contactanos</h1>
+      <h1 className={styles.titulo}>Contactanos</h1>
       <br />
       <img src={logo} alt="logo" className={styles.logo} />
       <h1 className={styles.h1}>
@@ -103,19 +103,6 @@ const Contacto = () => {
           </button>
         </form>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9291.534435932665!2d-58.420864227677704!3d-34.57751272451957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57ebaeac219%3A0xa485a3c2ba14616b!2sAv.%20Gral.%20Las%20Heras%203780%2C%20C1425ATO%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286180253!5m2!1ses!2sar" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        {/* <MapContainer
-          center={position}
-          zoom={15}
-          style={{ height: "430px", width: "50%", borderRadius: "10px" }}
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={position}>
-            <Popup>Av. Gral. Las Heras 3780</Popup>
-          </Marker>
-        </MapContainer> */}
       </div>
       <img className={styles.edificios} src={edificios} alt="edificios" />
     </div>
