@@ -9,7 +9,6 @@ import Contacto from "./components/Contacto.jsx";
 import Comprar from "./components/Comprar.jsx";
 import Vender from "./components/Vender.jsx";
 import Desarrollo from "./components/Desarrollo.jsx";
-import Novedades from "./components/Novedades.jsx";
 import Nosotros from "./components/Nosotros.jsx";
 import Detail from "./components/Detail.jsx"
 
@@ -29,7 +28,6 @@ const RouterConfig = () => {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/desarrollos" element={<Desarrollo />} />
         <Route path="/nosotros" element={<Nosotros />} />
-        <Route path="/novedades" element={<Novedades />} />
         <Route path="/tasaciones" element={<Vender />} />
         <Route path="/detail/:id" element={<Detail />} />
 

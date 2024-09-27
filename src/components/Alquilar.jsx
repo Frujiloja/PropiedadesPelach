@@ -218,13 +218,14 @@ const Alquilar = () => {
             placeholder="Precio Máximo"
             min="0"
           />
-
-          <button className={styles.botonBuscar} onClick={aplicarFiltro}>
-            Buscar
-          </button>
-          <button className={styles.botonBuscar2} onClick={limpiarFiltros}>
-            Limpiar Filtros
-          </button>
+          <div className={styles.botoness}>
+            <button className={styles.botonBuscar} onClick={aplicarFiltro}>
+              Buscar
+            </button>
+            <button className={styles.botonBuscar2} onClick={limpiarFiltros}>
+              Limpiar Filtros
+            </button>
+          </div>
 
           <select
             className={styles.selectFiltro}
@@ -271,7 +272,7 @@ const Alquilar = () => {
                     <p className={styles.p_card}>
                       <strong>Metros Totales:</strong> {propiedad.metros}
                     </p>
-                    <p className={styles.p_card}>
+                    <p className={styles.p_card_desc}>
                       {truncateText(propiedad.descripcion, 100)}
                     </p>
                   </div>
@@ -300,12 +301,12 @@ const Alquilar = () => {
           ) : (
             propiedadesOrdenadas.map((propiedad) => (
               <div key={propiedad.id} className={styles.card}>
-                  <Link to={`/detail/${propiedad.id}`}>
-                    <img
-                      src={propiedad.imagen[0]}
-                      alt={`Propiedad en ${propiedad.ubicacion}`}
-                    />
-                  </Link>
+                <Link to={`/detail/${propiedad.id}`}>
+                  <img
+                    src={propiedad.imagen[0]}
+                    alt={`Propiedad en ${propiedad.ubicacion}`}
+                  />
+                </Link>
                 <div className={styles.card_content}>
                   <h2>USD {propiedad.precio.toLocaleString()}</h2>
                   <p className={styles.p_card}>
@@ -321,7 +322,7 @@ const Alquilar = () => {
                   <p className={styles.p_card}>
                     <strong>Metros Totales:</strong> {propiedad.metros}
                   </p>
-                  <p className={styles.p_card}>
+                  <p className={styles.p_card_desc}>
                     {truncateText(propiedad.descripcion, 100)}
                   </p>
                 </div>

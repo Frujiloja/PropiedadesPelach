@@ -18,11 +18,18 @@
     "entre": "Lafinur y Ugarteche",
     "proximo_a": "Palermo Botanico",
     "orientacion": "E",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0346909624905!2d-58.41449662350448!3d-34.5779887561412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57989217637%3A0x42048c437e074146!2sRep%C3%BAblica%20%C3%81rabe%20Siria%203300%2C%20C1425EYP%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727285930112!5m2!1ses!2sar",
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0346909624905!2d-58.41449662350448!3d-34.5779887561412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57989217637%3A0x42048c437e074146!2sRep%C3%BAblica%20%C3%81rabe%20Siria%203300%2C%20C1425EYP%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727285930112!5m2!1ses!2sar",
     "imagen": [
       "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726174689/106351114779244990764472571167166652704186334829841520574035596302164512939614_y9xwl4.jpg",
       "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116949/3_ptemom.jpg",
-      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116950/8_l6pmkr.jpg"
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116950/8_l6pmkr.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116950/9_qwcfvc.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116950/4_ukd6rl.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116950/7_vq8saf.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116949/11_hnsyva.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116949/5_hwfofz.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116949/10_qs7avf.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727116949/6_h4iavy.jpg"
     ]
   },
   {
@@ -44,8 +51,18 @@
     "entre": "Lozaro y Simbron",
     "proximo_a": "-",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726511043/IMG-20240911-WA0015_wkjqeb.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1727291348/IMG-20240911-WA0019_gev6tz.jpg", "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727291344/IMG-20240911-WA0009_ighcyn.jpg"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726511043/IMG-20240911-WA0015_wkjqeb.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727291348/IMG-20240911-WA0019_gev6tz.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727291344/IMG-20240911-WA0009_ighcyn.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727291345/IMG-20240911-WA0018_zchq9h.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727291349/IMG-20240911-WA0020_zyxblb.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727291345/IMG-20240911-WA0017_hedhwy.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727291345/IMG-20240911-WA0014_eyavxw.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727291345/IMG-20240911-WA0013_rf0tgb.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727291345/IMG-20240911-WA0012_lgezwx.jpg"
+    ]
   },
   {
     "id": 3,
@@ -66,8 +83,10 @@
     "entre": "Paraguay y Charcas",
     "proximo_a": "2 cuadras de Avenida Santa Fe y a 5 de la Estación Carranza del Subte D",
     "orientacion": "-",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.980954635339!2d-58.43315572350445!3d-34.579348456212884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb590f5be362f%3A0xb2821559de67f595!2sFitz%20Roy%202323%2C%20C1425FVE%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286653469!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726513190/FITZ_ROY_1-6870_dotfva.jpg"],
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.980954635339!2d-58.43315572350445!3d-34.579348456212884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb590f5be362f%3A0xb2821559de67f595!2sFitz%20Roy%202323%2C%20C1425FVE%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286653469!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726513190/FITZ_ROY_1-6870_dotfva.jpg"
+    ],
     "finalizacion": "02-07-1916"
   },
   {
@@ -89,8 +108,15 @@
     "entre": "Lozaro y Simbron",
     "proximo_a": "-",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726511051/IMG-20240912-WA0013_tezapm.jpg"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726511051/IMG-20240912-WA0013_tezapm.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727460300/IMG-20240912-WA0008_rpueve.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727460304/IMG-20240912-WA0009_leqfav.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727460300/IMG-20240912-WA0010_hbvasz.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727460305/IMG-20240912-WA0011_hffs7f.jpg",
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1727460299/IMG-20240912-WA0006_p2sxtz.jpg"
+    ]
   },
   {
     "id": 5,
@@ -111,8 +137,10 @@
     "entre": "-",
     "proximo_a": "-",
     "orientacion": "-",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.5000846642747!2d-58.497221423504946!3d-34.56621085551968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6f6dea091d9%3A0xbc18e778b742388e!2sManuela%20Pedraza%205400%2C%20C1431AJN%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286759686!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726517797/32_lbgvpd.jpg"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.5000846642747!2d-58.497221423504946!3d-34.56621085551968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6f6dea091d9%3A0xbc18e778b742388e!2sManuela%20Pedraza%205400%2C%20C1431AJN%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286759686!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726517797/32_lbgvpd.jpg"
+    ]
   },
   {
     "id": 6,
@@ -133,8 +161,10 @@
     "entre": "Gorriti y Cabrera",
     "proximo_a": "-",
     "orientacion": "-",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.341750868959!2d-58.42716642350384!3d-34.595518757066465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7bc35506ef%3A0x673d06f5e82c319e!2sPringles%201400%2C%20C1183AEZ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286794658!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726518895/12_u434ol.jpg"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.341750868959!2d-58.42716642350384!3d-34.595518757066465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7bc35506ef%3A0x673d06f5e82c319e!2sPringles%201400%2C%20C1183AEZ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286794658!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726518895/12_u434ol.jpg"
+    ]
   },
   {
     "id": 7,
@@ -155,8 +185,10 @@
     "entre": "Sarmiento y Bogado",
     "proximo_a": "Parque Centenario",
     "orientacion": "E",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0002828158804!2d-58.43311512350349!3d-34.60415435752261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6f098a113f%3A0xbf43bd4bf98762e3!2sLambar%C3%A9%20900%2C%20C1414%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286878677!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726519422/1_po08r8.jpg"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0002828158804!2d-58.43311512350349!3d-34.60415435752261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6f098a113f%3A0xbf43bd4bf98762e3!2sLambar%C3%A9%20900%2C%20C1414%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286878677!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726519422/1_po08r8.jpg"
+    ]
   },
   {
     "id": 8,
@@ -177,8 +209,10 @@
     "entre": "Billinghurst y Austria",
     "proximo_a": "1 cuadra del Alto Palermo y a 1 cuadra de Avenida Santa Fe",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.58668280856!2d-58.41085612350388!3d-34.58932335673944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8371a9e773%3A0x2ddab3a0e1ab6ea5!2sS%C3%A1nchez%20de%20Bustamante%201900%2C%20C1425%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286936713!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726521766/0407e546-2386-4c5b-9e2c-b4949ff735d8.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.58668280856!2d-58.41085612350388!3d-34.58932335673944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8371a9e773%3A0x2ddab3a0e1ab6ea5!2sS%C3%A1nchez%20de%20Bustamante%201900%2C%20C1425%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286936713!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726521766/0407e546-2386-4c5b-9e2c-b4949ff735d8.png"
+    ]
   },
   {
     "id": 9,
@@ -199,8 +233,10 @@
     "entre": "Heredia y Estomba",
     "proximo_a": "Av. Alvarez Thomas",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0310867304265!2d-58.46670472350463!3d-34.578079956146084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6759743f44f%3A0x128663af61f6303a!2sVirrey%20Avil%C3%A9s%203855%2C%20C1427CFE%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727287002089!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726522624/1_fgnoot.jpg"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0310867304265!2d-58.46670472350463!3d-34.578079956146084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6759743f44f%3A0x128663af61f6303a!2sVirrey%20Avil%C3%A9s%203855%2C%20C1427CFE%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727287002089!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726522624/1_fgnoot.jpg"
+    ]
   },
   {
     "id": 10,
@@ -221,8 +257,10 @@
     "entre": "Ugartech y Av. Raul Scalabrini Ortiz",
     "proximo_a": "Jardin Botanico",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8766067385495!2d-58.41520422350427!3d-34.581988656352415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57eb0c3415f%3A0xa7fb7d0a451fd0f!2sAv.%20Gral.%20Las%20Heras%203800%2C%20C1425ATO%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727287069793!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726523071/c3fdc816-3675-474c-9289-03dc6aa41346.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8766067385495!2d-58.41520422350427!3d-34.581988656352415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57eb0c3415f%3A0xa7fb7d0a451fd0f!2sAv.%20Gral.%20Las%20Heras%203800%2C%20C1425ATO%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727287069793!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726523071/c3fdc816-3675-474c-9289-03dc6aa41346.png"
+    ]
   },
   {
     "id": 11,
@@ -243,8 +281,10 @@
     "entre": "Galicia y Dr. Luis Belaustegui",
     "proximo_a": "Av. Juan Bautista Justo",
     "orientacion": "-",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726523347/1_ddyphv.jpg"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726523347/1_ddyphv.jpg"
+    ]
   },
   {
     "id": 12,
@@ -265,8 +305,10 @@
     "entre": "Castillo y Loyola",
     "proximo_a": "Avenida Niceto Vega y Avenida Córdoba",
     "orientacion": "O",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726523643/92b54eaa-08d0-4055-8c69-81140e2265dd.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726523643/92b54eaa-08d0-4055-8c69-81140e2265dd.png"
+    ]
   },
   {
     "id": 13,
@@ -287,8 +329,10 @@
     "entre": "Castillo y Loyola",
     "proximo_a": "Estado de Palestina y Francisco Acuña de Figueroa",
     "orientacion": "-",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726523935/c6e6ae72-afb3-4916-9cfb-e1f75931ddea.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726523935/c6e6ae72-afb3-4916-9cfb-e1f75931ddea.png"
+    ]
   },
   {
     "id": 14,
@@ -309,8 +353,10 @@
     "entre": "-",
     "proximo_a": "Country Venado II",
     "orientacion": "-",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726583076/b14fccc0-d269-4a94-b1e5-bcfb1379cb21.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726583076/b14fccc0-d269-4a94-b1e5-bcfb1379cb21.png"
+    ]
   },
   {
     "id": 15,
@@ -331,8 +377,10 @@
     "entre": "Sarmiento y Mitre",
     "proximo_a": "Estación Once",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726583322/089b25d4-1077-4858-a8cd-fbaf2926f7fc.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726583322/089b25d4-1077-4858-a8cd-fbaf2926f7fc.png"
+    ]
   },
   {
     "id": 16,
@@ -353,8 +401,10 @@
     "entre": "Lacarra y Bolaños",
     "proximo_a": "Estación Floresta",
     "orientacion": "-",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726584435/7bda67e6-f41e-49f7-b7d3-dd965501d718.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726584435/7bda67e6-f41e-49f7-b7d3-dd965501d718.png"
+    ]
   },
   {
     "id": 17,
@@ -375,8 +425,10 @@
     "entre": "Viamonte y Paraguay",
     "proximo_a": "Galerias Pacifico",
     "orientacion": "E",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726584649/f3f0d299-aa10-49ff-9c65-20ef22d1b5f0.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726584649/f3f0d299-aa10-49ff-9c65-20ef22d1b5f0.png"
+    ]
   },
   {
     "id": 18,
@@ -397,8 +449,10 @@
     "entre": "Viamonte y Paraguay",
     "proximo_a": "Galerias Pacifico",
     "orientacion": "E",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726584649/f3f0d299-aa10-49ff-9c65-20ef22d1b5f0.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726584649/f3f0d299-aa10-49ff-9c65-20ef22d1b5f0.png"
+    ]
   },
   {
     "id": 19,
@@ -419,8 +473,10 @@
     "entre": "Estado de Palestina y Francisco Acuña de Figueroa",
     "proximo_a": "Abasto Shopping",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726584899/2196603a-0770-452a-b581-2a1f80d587b4.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726584899/2196603a-0770-452a-b581-2a1f80d587b4.png"
+    ]
   },
   {
     "id": 20,
@@ -441,8 +497,10 @@
     "entre": "Av. Brasil y Cochabamba",
     "proximo_a": "Subte C",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726585515/c2e7cfbc-7e16-4aa2-a042-32f20897adcc.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726585515/c2e7cfbc-7e16-4aa2-a042-32f20897adcc.png"
+    ]
   },
   {
     "id": 21,
@@ -463,8 +521,10 @@
     "entre": "Sarmiento y Mitre",
     "proximo_a": "Avenida Corrientes",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726583322/089b25d4-1077-4858-a8cd-fbaf2926f7fc.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726583322/089b25d4-1077-4858-a8cd-fbaf2926f7fc.png"
+    ]
   },
   {
     "id": 22,
@@ -485,8 +545,10 @@
     "entre": "Danel y Liniers",
     "proximo_a": "Autopista 25 de Mayo",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726590666/225c3912-5a18-44dc-9c02-41eca508153c.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726590666/225c3912-5a18-44dc-9c02-41eca508153c.png"
+    ]
   },
   {
     "id": 23,
@@ -507,8 +569,10 @@
     "entre": "Demaria y Av.Libertador",
     "proximo_a": "Lagos de Palermo",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726590849/7b06c0f9-0269-401a-b63e-4fa8ba82b25b.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726590849/7b06c0f9-0269-401a-b63e-4fa8ba82b25b.png"
+    ]
   },
   {
     "id": 24,
@@ -529,8 +593,10 @@
     "entre": "Posadas y Av.Libertador",
     "proximo_a": "Retiro",
     "orientacion": "E",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726591046/220248e7-ffb2-4365-accc-2845ee7ef9cc.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726591046/220248e7-ffb2-4365-accc-2845ee7ef9cc.png"
+    ]
   },
   {
     "id": 25,
@@ -551,8 +617,10 @@
     "entre": "Jorge Luis Borges y Armenia",
     "proximo_a": "Palermo SOHO",
     "orientacion": "-",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726591195/bd73d3e7-187a-46ec-9018-57e92174d569.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726591195/bd73d3e7-187a-46ec-9018-57e92174d569.png"
+    ]
   },
   {
     "id": 26,
@@ -573,8 +641,10 @@
     "entre": "Padilla y Murillo",
     "proximo_a": "Movistar Arena",
     "orientacion": "E",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726591541/cd467718-8fb7-43ca-a264-890ba32b1041.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726591541/cd467718-8fb7-43ca-a264-890ba32b1041.png"
+    ]
   },
   {
     "id": 27,
@@ -595,8 +665,10 @@
     "entre": "Sanabria y Goya",
     "proximo_a": "Avenida Gaona , Juan B Justo y Avellaneda",
     "orientacion": "E",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726591730/f9f182ea-5ba1-4799-9c6e-1b678d4eafc2.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726591730/f9f182ea-5ba1-4799-9c6e-1b678d4eafc2.png"
+    ]
   },
   {
     "id": 28,
@@ -617,8 +689,10 @@
     "entre": "O'Higgins y Cuba",
     "proximo_a": "Cabildo y Juramento",
     "orientacion": "E",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726591923/794c132a-1eb4-4a76-a8fc-9b10866533a7.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726591923/794c132a-1eb4-4a76-a8fc-9b10866533a7.png"
+    ]
   },
   {
     "id": 29,
@@ -639,8 +713,10 @@
     "entre": "Santa Fe y Mansilla",
     "proximo_a": "SUBTE D Y H",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726592944/9780ee80-7c80-4c9c-b6b8-74d163f8b381.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726592944/9780ee80-7c80-4c9c-b6b8-74d163f8b381.png"
+    ]
   },
   {
     "id": 30,
@@ -661,8 +737,10 @@
     "entre": "Roosevelt y Blanco Encalada",
     "proximo_a": "Av. Dr. Ricardo Balbin",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726593182/74cf22eb-6674-45cc-8a07-3d4ee1cea46f.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726593182/74cf22eb-6674-45cc-8a07-3d4ee1cea46f.png"
+    ]
   },
   {
     "id": 31,
@@ -683,8 +761,10 @@
     "entre": "Juncal y Av. Santa Fe",
     "proximo_a": "Plaza Italia",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726593716/a951feff-1a72-4dfe-9833-5138a1ff0608.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726593716/a951feff-1a72-4dfe-9833-5138a1ff0608.png"
+    ]
   },
   {
     "id": 32,
@@ -705,8 +785,10 @@
     "entre": "Tucuman y Av. Corrientes",
     "proximo_a": "Av.Corrientes",
     "orientacion": "NE",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726594004/68c0a794-d73b-42da-ae58-c537b8dfcd73.png"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726594004/68c0a794-d73b-42da-ae58-c537b8dfcd73.png"
+    ]
   },
   {
     "id": 33,
@@ -727,7 +809,9 @@
     "entre": "Aguero y Sanchez de Bustamente",
     "proximo_a": "Av.Cordoba",
     "orientacion": "-",
-    "mapa":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
-    "imagen": ["https://res.cloudinary.com/dwxa2fewv/image/upload/v1726594213/1_otumiw.jpg"]
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726594213/1_otumiw.jpg"
+    ]
   }
 ]

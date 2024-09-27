@@ -4,12 +4,15 @@
   padding: 1rem;
   text-align: center;
   border-top: 1px solid #0b9451;
-  height: 2vh;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .text {
@@ -26,4 +29,10 @@
 
 .link:hover, .contact:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+.footer {
+  height: 8vh;
+}
 }

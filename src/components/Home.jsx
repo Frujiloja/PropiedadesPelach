@@ -5,17 +5,22 @@ import { Link, useNavigate } from "react-router-dom";
 import Banner from "../assets/Banner.gif";
 import logogif from "../assets/cucicba-logo.gif";
 import { useDispatch, useSelector } from "react-redux";
-import { getPropiedades, aplicarFiltrosHome, emptyHome } from "../redux/actions";
+import {
+  getPropiedades,
+  aplicarFiltrosHome,
+  emptyHome,
+} from "../redux/actions";
 
 const Home = () => {
   const dispatch = useDispatch();
+  dispatch(getPropiedades()); // Trae las propiedades
+
   const propiedades = useSelector((state) => state.propiedades);
   const navigate = useNavigate(); // Hook de navegación
 
-
   const [barrios, setBarrios] = useState([]);
   const [tipoInmueble, settipoInmueble] = useState([]);
-  
+
   const extractUniqueBarrios = () => {
     const barriosUnicos = [
       ...new Set(propiedades.map((prop) => prop.ubicacion)),
@@ -26,12 +31,12 @@ const Home = () => {
     const tiposUnicos = [...new Set(propiedades.map((prop) => prop.tipo))];
     settipoInmueble(tiposUnicos);
   };
-  
+
   useEffect(() => {
     dispatch(getPropiedades()); // Trae las propiedades
-    dispatch(emptyHome())
+    dispatch(emptyHome());
   }, [dispatch]);
-  
+
   useEffect(() => {
     if (propiedades.length > 0) {
       extractUniqueBarrios();
@@ -64,21 +69,21 @@ const Home = () => {
     let url;
     switch (activeTab) {
       case 0:
-        console.log(filtros)
+        console.log(filtros);
         const filtrosConVenta = { ...filtros, operacion: "Venta" };
-        dispatch(aplicarFiltrosHome(filtrosConVenta))
+        dispatch(aplicarFiltrosHome(filtrosConVenta));
         url = "/comprar"; // URL para la pestaña "Comprar"
         break;
       case 1:
-        console.log(filtros)
+        console.log(filtros);
         const filtrosConAlquiler = { ...filtros, operacion: "Alquiler" };
-        dispatch(aplicarFiltrosHome(filtrosConAlquiler))
+        dispatch(aplicarFiltrosHome(filtrosConAlquiler));
         url = "/alquilar"; // URL para la pestaña "Alquilar"
         break;
       case 2:
-        console.log(filtros)
+        console.log(filtros);
         const filtrosConDesarrollo = { ...filtros, operacion: "Desarrollo" };
-        dispatch(aplicarFiltrosHome(filtrosConDesarrollo))
+        dispatch(aplicarFiltrosHome(filtrosConDesarrollo));
         url = "/desarrollos"; // URL para la pestaña "Desarrollos"
         break;
       default:
@@ -90,6 +95,10 @@ const Home = () => {
   return (
     <div className={styles.home_container}>
       <div className={styles.img}>
+        <div className={styles.titulo}>
+          <h1>Propiedades en venta y alquiler</h1>
+          <h2>Encontrá tu hogar</h2>
+        </div>
         <div className={styles.search_container}>
           <div className={styles.container}>
             {/* Contenedor de las pestañas */}
@@ -141,89 +150,164 @@ const Home = () => {
                       </option>
                     ))}
                   </select>
-                  <div className={styles.precio}>
+                  {/* <div className={styles.precio}>
                     <div className={styles.inputs_price}>
                       <span className={styles.currency}>USD</span>
-                      <input onChange={handleChange} name="precioMin" value={filtros.precioMin} className={styles.selectFiltro2} type="text" placeholder="Desde" />
+                      <input
+                        onChange={handleChange}
+                        name="precioMin"
+                        value={filtros.precioMin}
+                        className={styles.selectFiltro2}
+                        type="text"
+                        placeholder="Desde"
+                      />
                       <span className={styles.currency}>USD</span>
-                      <input onChange={handleChange} name="precioMax" value={filtros.precioMax} className={styles.selectFiltro2} type="text" placeholder="Hasta" />
+                      <input
+                        onChange={handleChange}
+                        name="precioMax"
+                        value={filtros.precioMax}
+                        className={styles.selectFiltro2}
+                        type="text"
+                        placeholder="Hasta"
+                      />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               )}
               {activeTab === 1 && (
                 <div className={styles.h4_container}>
-                <select
-                  name="tipo"
-                  value={filtros.tipo}
-                  onChange={handleChange}
-                  className={styles.selectFiltro}
-                >
-                  <option value="">Tipo de Propiedad</option>
-                  {tipoInmueble.map((tipo, index) => (
-                    <option key={index} value={tipo}>
-                      {tipo}
-                    </option>
-                  ))}
-                </select>
-                <select
-                  name="ubicacion"
-                  value={filtros.ubicacion}
-                  onChange={handleChange}
-                  className={styles.selectFiltro}
-                >
-                  <option value="">Barrio</option>
-                  {barrios.map((barrio, index) => (
-                    <option key={index} value={barrio}>
-                      {barrio}
-                    </option>
-                  ))}
-                </select>
-                <div className={styles.precio}>
-                <div className={styles.inputs_price}>
+                  <select
+                    name="tipo"
+                    value={filtros.tipo}
+                    onChange={handleChange}
+                    className={styles.selectFiltro}
+                  >
+                    <option value="">Tipo de Propiedad</option>
+                    {tipoInmueble.map((tipo, index) => (
+                      <option key={index} value={tipo}>
+                        {tipo}
+                      </option>
+                    ))}
+                  </select>
+                  <select
+                    name="ubicacion"
+                    value={filtros.ubicacion}
+                    onChange={handleChange}
+                    className={styles.selectFiltro}
+                  >
+                    <option value="">Barrio</option>
+                    {barrios.map((barrio, index) => (
+                      <option key={index} value={barrio}>
+                        {barrio}
+                      </option>
+                    ))}
+                  </select>
+                  {/* <div className={styles.precio}>
+                    <div className={styles.inputs_price}>
                       <span className={styles.currency}>USD</span>
-                      <input onChange={handleChange} name="precioMin" value={filtros.precioMin} className={styles.selectFiltro2} type="text" placeholder="Desde" />
+                      <input
+                        onChange={handleChange}
+                        name="precioMin"
+                        value={filtros.precioMin}
+                        className={styles.selectFiltro2}
+                        type="text"
+                        placeholder="Desde"
+                      />
                       <span className={styles.currency}>USD</span>
-                      <input onChange={handleChange} name="precioMax" value={filtros.precioMax} className={styles.selectFiltro2} type="text" placeholder="Hasta" />
+                      <input
+                        onChange={handleChange}
+                        name="precioMax"
+                        value={filtros.precioMax}
+                        className={styles.selectFiltro2}
+                        type="text"
+                        placeholder="Hasta"
+                      />
                     </div>
+                  </div> */}
                 </div>
-              </div>
               )}
             </div>
-            <button className={styles.btn} onClick={handleSearch}>Buscar</button>
+            <button className={styles.btn} onClick={handleSearch}>
+              Buscar
+            </button>
           </div>
         </div>
+      </div>
+      <div className={styles.titulo2}>
+        <h1>
+          ¡Descubrí las oportunidades más destacadas en compra y alquiler!
+        </h1>
+        <h2>
+          En Pelach propiedades somos referentes en el mercado de propiedades y
+          bienes raíces en Argentina. <br />
+          Si estás buscando alquilar o comprar una casa, departamento, local
+          comercial, oficina o terreno, estás en el lugar indicado.
+        </h2>
+      </div>
+      <div className={styles.destacadas}>
+        <Link to="/detail/1">
+          <div className={styles.card}>
+            <img
+              src={propiedades[0].imagen[0]}
+              alt="Descripción de la imagen"
+              className={styles.card_image}
+            />
+            <div className={styles.card_text}>
+              <p>Ver Mas</p>
+            </div>
+          </div>
+        </Link>
+        <Link to="/detail/30">
+          <div className={styles.card}>
+            <img
+              src={propiedades[29].imagen[0]}
+              alt="Descripción de la imagen"
+              className={styles.card_image}
+            />
+            <div className={styles.card_text}>
+              <p>Ver Mas</p>
+            </div>
+          </div>
+        </Link>
+        <Link to="/detail/6">
+          <div className={styles.card}>
+            <img
+              src={propiedades[5].imagen[0]}
+              alt="Descripción de la imagen"
+              className={styles.card_image}
+            />
+            <div className={styles.card_text}>
+              <p>Ver Mas</p>
+            </div>
+          </div>
+        </Link>
       </div>
       <div className={styles.box_container}>
         <Link className={styles.recuadro} to="/tasaciones">
           <div className={styles.recuadro}>
-            <FaCalculator className={styles.icon} /> {/* Ícono de la casa */}
+            <FaCalculator className={styles.icon} />
             <h4>Tasar Con Un Profesional</h4>
-            <p>
-              Te ayudamos a que puedas vender o alquilar tu propiedad.
-            </p>
+            <p>Te ayudamos a que puedas vender o alquilar tu propiedad.</p>
           </div>
         </Link>
         <Link className={styles.recuadro} to="/contacto">
           <div className={styles.recuadro}>
-            <FaPhone className={styles.icon} /> {/* Ícono de la casa */}
+            <FaPhone className={styles.icon} />
             <h4>Contactanos</h4>
             <p>Entérate de todas las opciones disponibles en CABA. </p>
           </div>
         </Link>
-        <Link className={styles.recuadro} to="/novedades">
+        {/* <Link className={styles.recuadro} to="/novedades">
           <div className={styles.recuadro}>
-            <FaRegNewspaper className={styles.icon} /> {/* Ícono de la casa */}
+            <FaRegNewspaper className={styles.icon} />
             <h4>Enterate Nuestras Novedades</h4>
             <p>
               Conocé nuestra ultimas novedades y nuevas leyes inmobiliarias.
             </p>
           </div>
-        </Link>
+        </Link> */}
       </div>
-      <div>
-        <img src={Banner} alt="Banner" className={styles.banner} />
-      </div>
+      <div></div>
       <p className={styles.ptext}>
         LEY 2340 ARTICULO 11 - DERECHOS SON DERECHOS DE LOS CORREDORES
         INMOBILIARIOS: <br />

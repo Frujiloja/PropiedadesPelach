@@ -218,14 +218,14 @@ const Comprar = () => {
             placeholder="Precio Máximo"
             min="0"
           />
-
+          <div className={styles.botoness}>
           <button className={styles.botonBuscar} onClick={aplicarFiltro}>
             Buscar
           </button>
           <button className={styles.botonBuscar2} onClick={limpiarFiltros}>
             Limpiar Filtros
           </button>
-
+          </div>
           <select
             className={styles.selectFiltro}
             value={sortCriteria}
@@ -271,7 +271,7 @@ const Comprar = () => {
                     <p className={styles.p_card}>
                       <strong>Metros Totales:</strong> {propiedad.metros}
                     </p>
-                    <p className={styles.p_card}>
+                    <p className={styles.p_card_desc}>
                       {truncateText(propiedad.descripcion, 100)}
                     </p>
                   </div>
@@ -321,7 +321,7 @@ const Comprar = () => {
                   <p className={styles.p_card}>
                     <strong>Metros Totales:</strong> {propiedad.metros}
                   </p>
-                  <p className={styles.p_card}>
+                  <p className={styles.p_card_desc}>
                     {truncateText(propiedad.descripcion, 100)}
                   </p>
                 </div>

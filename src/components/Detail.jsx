@@ -79,7 +79,6 @@ const Detail = () => {
       >
         <FaArrowLeft /> Volver al Listado
       </Link>
-      <p>volver</p>
       <div className={styles.card}>
       <Slider {...settings} className={styles.image}>
         {propiedad.imagen.map((image, index) => (
