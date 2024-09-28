@@ -75,32 +75,34 @@ const Navbar = () => {
           </div>
           <ul className={`${styles.menulinks} ${menuOpen ? styles.open : ""}`}>
             <li>
-              <a href="/">Inicio</a>
+              <Link className={styles.link} onClick={toggleMenu} to="/">
+                Inicio
+              </Link>
             </li>
             <li>
-              <a href="/comprar" onClick={toggleMenu}>
+              <Link className={styles.link} onClick={toggleMenu} to="/comprar">
                 Comprar
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/alquilar" onClick={toggleMenu}>
+            <Link className={styles.link} onClick={toggleMenu} to="/alquilar">
                 Alquilar
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/tasaciones" onClick={toggleMenu}>
+            <Link className={styles.link} onClick={toggleMenu} to="/tasaciones">
                 Tasaciones
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/nosotros" onClick={toggleMenu}>
+            <Link className={styles.link} onClick={toggleMenu} to="/nosotros">
                 Nosotros
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contacto" onClick={toggleMenu}>
+            <Link className={styles.link} onClick={toggleMenu} to="/contacto">
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

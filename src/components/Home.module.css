@@ -328,17 +328,25 @@ h5 {
 @media screen and (max-width: 768px) {
   .search_container {
     width: 70%;
+    height: 30vh;
+  }
+
+  .h4_container {
+    gap: 0.5rem;
   }
 
   .titulo h1 {
     font-size: 2rem;
     margin-top: 5rem;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
   }
 
   .titulo h2 {
     font-size: 1.5rem;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .titulo2 h1 {
@@ -371,4 +379,11 @@ h5 {
     padding: 15px;
   }
 
+  .tabs {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
 }

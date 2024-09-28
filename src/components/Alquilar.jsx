@@ -257,6 +257,8 @@ const Alquilar = () => {
                       alt={`Propiedad en ${propiedad.ubicacion}`}
                     />
                   </Link>
+                  <div className={styles.info_btn}>
+
                   <div className={styles.card_content}>
                     <h2>USD {propiedad.precio.toLocaleString()}</h2>
                     <p className={styles.p_card}>
@@ -290,6 +292,7 @@ const Alquilar = () => {
                       Ver Detalle
                     </Link>
                   </div>
+                  </div>
                 </div>
               ))
             ) : (
@@ -307,6 +310,8 @@ const Alquilar = () => {
                     alt={`Propiedad en ${propiedad.ubicacion}`}
                   />
                 </Link>
+                <div className={styles.info_btn}>
+
                 <div className={styles.card_content}>
                   <h2>USD {propiedad.precio.toLocaleString()}</h2>
                   <p className={styles.p_card}>
@@ -339,6 +344,7 @@ const Alquilar = () => {
                   >
                     Ver Detalle
                   </Link>
+                </div>
                 </div>
               </div>
             ))

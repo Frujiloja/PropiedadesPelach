@@ -68,7 +68,7 @@
 
 .cards {
   /* background-color: gray; */
-  width: 70vw;
+  width: 80vw;
   border-radius: 10px;
 }
 
@@ -182,7 +182,6 @@
   height: 5vh;
 }
 
-
 .botonBuscar2:hover {
   background-color: #6b6b6b;
 }
@@ -198,7 +197,8 @@
   right: 3rem; /* Ajusta el espaciado desde el borde derecho */
 }
 
-.botonContactar, .botonWhatsapp {
+.botonContactar,
+.botonWhatsapp {
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   border: none;
@@ -210,7 +210,6 @@
   display: flex;
   gap: 0.5rem;
   text-decoration: none; /* Elimina el subrayado del enlace */
-
 }
 
 .botonContactar {
@@ -232,14 +231,19 @@
   background-color: #0fb967;
 }
 
-.botoness{
+.botoness {
   display: flex;
   gap: 1rem;
 }
 
-.botonContactar i, .botonWhatsapp i {
+.botonContactar i,
+.botonWhatsapp i {
   margin-right: 0.5rem; /* Espaciado entre el ícono y el texto */
   font-size: 1.2rem; /* Tamaño del ícono */
+}
+
+.info_btn {
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {
@@ -253,24 +257,30 @@
     margin-top: 1rem;
   }
 
-  .card_buttons {
-    display: none;
+  .cards {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
-  
+
   .card {
     flex-direction: column;
     height: 40vh;
+    min-height: 330px;
+    width: auto;
+    margin-right: 0;
   }
 
   .card img {
-    width: 500px;
+    width: 90vw;
     object-fit: cover; /* Mantiene la proporción de la imagen y cubre el área del contenedor */
-
+    margin-right: 0;
   }
-  }
+}
 
-  @media screen and (max-width: 1100px) {
-    .p_card_desc {
-      display: none;
-    }
-    }
+@media screen and (max-width: 1100px) {
+  .p_card_desc {
+    display: none;
+  }
+}

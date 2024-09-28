@@ -219,12 +219,12 @@ const Comprar = () => {
             min="0"
           />
           <div className={styles.botoness}>
-          <button className={styles.botonBuscar} onClick={aplicarFiltro}>
-            Buscar
-          </button>
-          <button className={styles.botonBuscar2} onClick={limpiarFiltros}>
-            Limpiar Filtros
-          </button>
+            <button className={styles.botonBuscar} onClick={aplicarFiltro}>
+              Buscar
+            </button>
+            <button className={styles.botonBuscar2} onClick={limpiarFiltros}>
+              Limpiar Filtros
+            </button>
           </div>
           <select
             className={styles.selectFiltro}
@@ -240,11 +240,11 @@ const Comprar = () => {
         </div>
         <div className={styles.cards}>
           {busquedaRealizada && propiedadesHome.length === 0 ? (
-              <div className={styles.none}>
+            <div className={styles.none}>
               <h2>No se han encontrado propiedades</h2>
               <p>Prueba ajustando los filtros o busca en otra ubicación.</p>
-            </div>):(
-          propiedadesHome > 0 ? (
+            </div>
+          ) : propiedadesHome > 0 ? (
             propiedadesHome
           ) : filtrosAplicados ? (
             propiedadesFiltradas.length > 0 ? (
@@ -256,6 +256,59 @@ const Comprar = () => {
                       alt={`Propiedad en ${propiedad.ubicacion}`}
                     />
                   </Link>
+                  <div className={styles.info_btn}>
+                    <div className={styles.card_content}>
+                      <h2>USD {propiedad.precio.toLocaleString()}</h2>
+                      <p className={styles.p_card}>
+                        <strong>Ubicación: </strong>
+                        {propiedad.ubicacion}
+                      </p>
+                      <p className={styles.p_card}>
+                        <strong>Tipo:</strong> {propiedad.tipo}
+                      </p>
+                      <p className={styles.p_card}>
+                        <strong>Ambientes:</strong> {propiedad.ambientes}
+                      </p>
+                      <p className={styles.p_card}>
+                        <strong>Metros Totales:</strong> {propiedad.metros}
+                      </p>
+                      <p className={styles.p_card_desc}>
+                        {truncateText(propiedad.descripcion, 100)}
+                      </p>
+                    </div>
+                    <div className={styles.card_buttons}>
+                      <button
+                        className={styles.botonWhatsapp}
+                        onClick={() => handleClick(propiedad)}
+                      >
+                        WhatsApp <i className="fab fa-whatsapp"></i>
+                      </button>
+                      <Link
+                        to={`/detail/${propiedad.id}`}
+                        className={styles.botonContactar}
+                      >
+                        Ver Detalle
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <div className={styles.none}>
+                <h2>No se han encontrado propiedades</h2>
+                <p>Prueba ajustando los filtros o busca en otra ubicación.</p>
+              </div>
+            )
+          ) : (
+            propiedadesOrdenadas.map((propiedad) => (
+              <div key={propiedad.id} className={styles.card}>
+                <Link to={`/detail/${propiedad.id}`}>
+                  <img
+                    src={propiedad.imagen[0]}
+                    alt={`Propiedad en ${propiedad.ubicacion}`}
+                  />
+                </Link>
+                <div className={styles.info_btn}>
                   <div className={styles.card_content}>
                     <h2>USD {propiedad.precio.toLocaleString()}</h2>
                     <p className={styles.p_card}>
@@ -290,57 +343,8 @@ const Comprar = () => {
                     </Link>
                   </div>
                 </div>
-              ))
-            ) : (
-              <div className={styles.none}>
-                <h2>No se han encontrado propiedades</h2>
-                <p>Prueba ajustando los filtros o busca en otra ubicación.</p>
               </div>
-            )
-          ) : (
-            propiedadesOrdenadas.map((propiedad) => (
-              <div key={propiedad.id} className={styles.card}>
-                  <Link to={`/detail/${propiedad.id}`}>
-                    <img
-                      src={propiedad.imagen[0]}
-                      alt={`Propiedad en ${propiedad.ubicacion}`}
-                    />
-                  </Link>
-                <div className={styles.card_content}>
-                  <h2>USD {propiedad.precio.toLocaleString()}</h2>
-                  <p className={styles.p_card}>
-                    <strong>Ubicación: </strong>
-                    {propiedad.ubicacion}
-                  </p>
-                  <p className={styles.p_card}>
-                    <strong>Tipo:</strong> {propiedad.tipo}
-                  </p>
-                  <p className={styles.p_card}>
-                    <strong>Ambientes:</strong> {propiedad.ambientes}
-                  </p>
-                  <p className={styles.p_card}>
-                    <strong>Metros Totales:</strong> {propiedad.metros}
-                  </p>
-                  <p className={styles.p_card_desc}>
-                    {truncateText(propiedad.descripcion, 100)}
-                  </p>
-                </div>
-                <div className={styles.card_buttons}>
-                  <button
-                    className={styles.botonWhatsapp}
-                    onClick={() => handleClick(propiedad)}
-                  >
-                    WhatsApp <i className="fab fa-whatsapp"></i>
-                  </button>
-                  <Link
-                    to={`/detail/${propiedad.id}`}
-                    className={styles.botonContactar}
-                  >
-                    Ver Detalle
-                  </Link>
-                </div>
-              </div>
-            )))
+            ))
           )}
         </div>
       </div>

@@ -59,10 +59,11 @@
 
 .image {
   height: 25vw;
-  min-height: 600px;
+  min-height: 300px;
   width: 50%;
   object-fit: cover;
   border-radius: 5px;
+  background-color: red;
 }
 
 .slider_div {
@@ -146,5 +147,6 @@
 
   .icon {
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
