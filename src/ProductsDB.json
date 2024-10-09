@@ -119,30 +119,6 @@
     ]
   },
   {
-    "id": 5,
-    "direccion": "Manuela Pedraza 5400 PB",
-    "metros": "1250 m2",
-    "precio": "6500",
-    "tipo": "Depósito",
-    "descripcion": "Excelente depósito desarrollado en una planta de aproximadamente de 1.000m2 cubiertos mas 250m2 libres al fondo. Lote 31m de frente x 40 de fondo ( total lote 1250m2). Ubicación estratégica: Zona de Villa Urquiza a solo 10 cuadras de la Gral. Paz y 15 cuadras de la Panamericana. Cercano a la estación Villa Urquiza, subte B, al centro comercial y variedad de servicios. Fachada: Impresionantes 30 m sobre la calle Manuela Pedraza ofreciendo una excelente imagen corporativa y notable presencia en la zona. Comodidades: Área oficina de 200 m2 con recepción, showroom, 4 oficinas, 2 baños, jardín de invierno, luz y ventilación natural. Área depósito: 800m2 con entrada para camiones de alto porte (contenedores de 40 High cube), piso de hormigón armado para grandes cargas. Baños y vestuarios con duchas para el personal de ambos sexos. Fácil acceso desde y hacia distintos puntos de la ciudad y el Amba.",
-    "operacion": "Alquiler",
-    "antiguedad": "-",
-    "ambientes": "-",
-    "dormitorios": "-",
-    "baños": "-",
-    "toilette": "-",
-    "ubicacion": "Villa Urquiza",
-    "luminosidad": "-",
-    "estado_general": "Muy Bueno",
-    "entre": "-",
-    "proximo_a": "-",
-    "orientacion": "-",
-    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.5000846642747!2d-58.497221423504946!3d-34.56621085551968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6f6dea091d9%3A0xbc18e778b742388e!2sManuela%20Pedraza%205400%2C%20C1431AJN%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286759686!5m2!1ses!2sar",
-    "imagen": [
-      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726517797/32_lbgvpd.jpg"
-    ]
-  },
-  {
     "id": 6,
     "direccion": "Pringles 1400 2º7",
     "metros": "45 m2",
@@ -163,7 +139,8 @@
     "orientacion": "-",
     "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.341750868959!2d-58.42716642350384!3d-34.595518757066465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7bc35506ef%3A0x673d06f5e82c319e!2sPringles%201400%2C%20C1183AEZ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286794658!5m2!1ses!2sar",
     "imagen": [
-      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726518895/12_u434ol.jpg"
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500383/PEL0451_005_lcv1aq.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500385/PEL0451_021_mivpqt.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500385/PEL0451_012_xoguus.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500374/PEL0451_003_qdvcyx.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500374/PEL0451_009_gfoqsi.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500373/PEL0451_004_sunrbl.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500373/PEL0451_006_loyqdz.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500373/PEL0451_002_rpdxlg.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500373/PEL0451_001_wqfczj.jpg"
+
     ]
   },
   {
@@ -187,7 +164,8 @@
     "orientacion": "E",
     "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0002828158804!2d-58.43311512350349!3d-34.60415435752261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6f098a113f%3A0xbf43bd4bf98762e3!2sLambar%C3%A9%20900%2C%20C1414%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286878677!5m2!1ses!2sar",
     "imagen": [
-      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726519422/1_po08r8.jpg"
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500380/PEL0443_013_rjrpcf.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500380/PEL0443_011_azwzy0.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500379/PEL0443_010_levewn.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500379/PEL0443_009_smxxdy.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500383/PEL0443_018_kzeoef.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500382/PEL0443_017_yqjqvw.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500382/PEL0443_015_mrerjk.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500380/PEL0443_014_bygyss.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500431/PEL0443_007_ozppcg.jpg"
+
     ]
   },
   {
@@ -211,7 +189,8 @@
     "orientacion": "NE",
     "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.58668280856!2d-58.41085612350388!3d-34.58932335673944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8371a9e773%3A0x2ddab3a0e1ab6ea5!2sS%C3%A1nchez%20de%20Bustamante%201900%2C%20C1425%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286936713!5m2!1ses!2sar",
     "imagen": [
-      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726521766/0407e546-2386-4c5b-9e2c-b4949ff735d8.png"
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500471/PEL0390_005_z4vfyq.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500402/PEL0390_010_u2n8ca.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500441/PEL0390_001_ghiyq6.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500450/PEL0390_007_ym1uh9.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500402/PEL0390_009_l04fcv.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500401/PEL0390_004_ge7hrv.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500401/PEL0390_012_rnlluv.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500399/PEL0390_003_dskkq6.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500386/PEL0390_002_qgcaef.jpg"
+
     ]
   },
   {
@@ -235,7 +214,8 @@
     "orientacion": "NE",
     "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0310867304265!2d-58.46670472350463!3d-34.578079956146084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6759743f44f%3A0x128663af61f6303a!2sVirrey%20Avil%C3%A9s%203855%2C%20C1427CFE%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727287002089!5m2!1ses!2sar",
     "imagen": [
-      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726522624/1_fgnoot.jpg"
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1728501237/10af4ba8-581c-44b6-b20f-926901fb7509.png","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500471/PEL0449_025_kesep9.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500468/PEL0449_015_ckkpp5.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500468/PEL0449_016_zsncxu.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500442/PEL0449_019_letahg.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500438/PEL0449_011_mubdh6.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500437/PEL0449_005_ynwa75.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500437/PEL0449_003_epzo9p.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500435/PEL0449_008_jipjf7.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500383/PEL0449_006_c3ivfz.jpg"
+
     ]
   },
   {
@@ -571,7 +551,8 @@
     "orientacion": "NE",
     "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
     "imagen": [
-      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726590849/7b06c0f9-0269-401a-b63e-4fa8ba82b25b.png"
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500465/PEL0444_001_kd4bxh.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500441/PEL0444_010_sbvlal.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500435/PEL0444_012_wm2ajd.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500435/PEL0444_009_ge0xec.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500373/PEL0444_004_fqweja.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500373/PEL0444_011_yrznzi.jpg","https://res.cloudinary.com/dwxa2fewv/image/upload/v1728500373/PEL0444_003_a7ou9l.jpg"
+
     ]
   },
   {
@@ -793,6 +774,30 @@
   {
     "id": 33,
     "direccion": "Gallo 1300",
+    "metros": "-",
+    "precio": "24.000",
+    "tipo": "Cochera",
+    "descripcion": "IMPORTANTES COCHERAS EN VENTA. (2)!!. EXCELENTE UBICACION!! GALLO Y ASANTA FE!! A METROS DE AVENIDA SANTA FE LINEAS DE COLECTIVOS Y SUBTES !, OPORTUNIDAD!! VALORES : U$S 24.000 EN EL PRIMER PISO 1ER SUBSUELO U$S 18.000.-",
+    "operacion": "Venta",
+    "antiguedad": "-",
+    "ambientes": "-",
+    "dormitorios": "-",
+    "baños": "-",
+    "toilette": "-",
+    "ubicacion": "Recoleta",
+    "luminosidad": "-",
+    "estado_general": "-",
+    "entre": "Aguero y Sanchez de Bustamente",
+    "proximo_a": "Av.Cordoba",
+    "orientacion": "-",
+    "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8561025064405!2d-58.510519523503284!3d-34.60780005771513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb62cbff2715b%3A0x7b955a8e6d8e8e9b!2sTinogasta%204300%2C%20C1417EIT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727286041566!5m2!1ses!2sar",
+    "imagen": [
+      "https://res.cloudinary.com/dwxa2fewv/image/upload/v1726594213/1_otumiw.jpg"
+    ]
+  },
+  {
+    "id": 34,
+    "direccion": "Valeria Del Mar",
     "metros": "-",
     "precio": "24.000",
     "tipo": "Cochera",

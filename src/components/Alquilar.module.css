@@ -42,7 +42,7 @@
 
 .cards {
   /* background-color: gray; */
-  width: 70vw;
+  width: 80vw;
   border-radius: 10px;
 }
 
@@ -58,7 +58,6 @@
   border: 1px solid rgb(198, 198, 198);
   position: relative;
 }
-
 .card img {
   width: 30vw; /* Ajusta el ancho según tus necesidades */
   max-width: 400px;
@@ -243,6 +242,8 @@
 
 .info_btn {
   display: flex;
+  width: 70%;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
