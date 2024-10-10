@@ -192,7 +192,7 @@ const Alquilar = () => {
             onChange={handleChange}
             className={styles.selectFiltro}
           >
-            <option value="">Cantidad de Ambientes</option>
+            <option value="">Ambientes</option>
             <option value="1">1 Ambiente</option>
             <option value="2">2 Ambientes</option>
             <option value="3">3 Ambientes</option>

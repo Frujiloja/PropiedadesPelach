@@ -18,7 +18,7 @@
 }
 
 .cards_filter {
-    width: 80%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -104,6 +104,8 @@
   transition: border-color 0.3s ease;
   outline: none;
   height: 5vh;
+  width: 30%;
+  max-width: 200px;
 }
 
 .none {
@@ -255,6 +257,7 @@
     border-radius: 10px;
     gap: 0rem; */
     margin-top: 1rem;
+    width: 100%;
   }
 
   .cards {
@@ -264,16 +267,24 @@
     flex-direction: column;
   }
 
+  .card_buttons{
+    padding: 0;
+  }
+
   /* .card_buttons {
     display: none;
   } */
 
   .card {
     flex-direction: column;
-    height: 40vh;
+    height: 42vh;
     min-height: 330px;
     width: auto;
     margin-right: 0;
+  }
+
+  .info_btn{
+    width: 90%;
   }
 
   .card img {
