@@ -257,7 +257,7 @@ const Home = () => {
             </div>
           </div>
         </Link>
-        <Link to="/detail/30">
+        <Link to="/detail/34">
           <div className={styles.card}>
             <img
               src={propiedades[27].imagen[0]}
@@ -269,7 +269,7 @@ const Home = () => {
             </div>
           </div>
         </Link>
-        <Link to="/detail/6">
+        <Link to="/detail/8">
           <div className={styles.card}>
             <img
               src={propiedades[5].imagen[0]}
@@ -336,7 +336,6 @@ const Home = () => {
         el caso, a través del procedimiento establecido por la Ley Nº 757.{" "}
         <br />
         <br />
-        Artículo 3º.- Comuníquese, etc.
       </p>
       <img className={styles.logogif} src={logogif} alt="logo gif" />
       <p className={styles.pblack}>

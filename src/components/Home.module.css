@@ -10,9 +10,11 @@
 
 .destacadas {
   width: 80%;
-  height: 25vh;
+  height: auto;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .card {
