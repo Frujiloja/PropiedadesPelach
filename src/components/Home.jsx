@@ -260,7 +260,7 @@ const Home = () => {
         <Link to="/detail/30">
           <div className={styles.card}>
             <img
-              src={propiedades[29].imagen[0]}
+              src={propiedades[27].imagen[0]}
               alt="Descripción de la imagen"
               className={styles.card_image}
             />
