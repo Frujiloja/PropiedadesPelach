@@ -70,6 +70,7 @@
   outline: none;
   height: 5vh;
   width: 80%;
+  color: black;
 }
 
 .selectFiltro2 {
@@ -199,6 +200,7 @@
   font-size: 16px;
   font-weight: bold;
   transition: color 0.3s;
+  color: black;
 }
 
 .tab:hover {
@@ -342,14 +344,14 @@ h5 {
   }
 
   .titulo h1 {
-    font-size: 2rem;
+    font-size: 5vh;
     margin-top: 1rem;
     padding-left: 15px;
     padding-right: 15px;
   }
 
   .titulo h2 {
-    font-size: 1.5rem;
+    font-size: 3.5vh;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -369,6 +371,11 @@ h5 {
     align-items: center; /* Para centrar las cards */
     height: auto; /* Ajusta la altura automáticamente */
     gap: 1rem;
+    background-color: red;
+  }
+
+  .card {
+    width: 100%;
   }
 
   .box_container {
@@ -386,10 +393,11 @@ h5 {
 
   .tabs {
     margin-bottom: 10px;
+    height: 7vh;
   }
 
   .tab {
-    font-size: 0.8rem;
+    font-size: 2vh;
   }
 
   .btn {

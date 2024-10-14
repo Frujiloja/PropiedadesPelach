@@ -275,7 +275,7 @@
 
   .card {
     flex-direction: column;
-    height: 42vh;
+    height: auto;
     min-height: 330px;
     width: auto;
     margin-right: 0;

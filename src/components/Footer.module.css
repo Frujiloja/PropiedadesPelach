@@ -21,6 +21,12 @@
   color: white
 }
 
+.textv2 {
+  margin: 0;
+  font-size: 0.8rem;
+  color: rgb(174, 174, 174)
+}
+
 .link, .contact {
   color: #f1f1f1; /* Color de los enlaces */
   text-decoration: none;
