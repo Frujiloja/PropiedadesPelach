@@ -25,6 +25,16 @@ const Detail = () => {
     return <div className={styles.notFound}>Propiedad no encontrada.</div>;
   }
 
+  const phoneNumber = "5491152280786"; // Reemplaza con el número de teléfono real
+
+  const handleClick = (propiedad) => {
+    const message = `Hola, me interesa más información sobre la propiedad ubicada en ${propiedad.ubicacion} con un precio de USD ${propiedad.precio}.`;
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
+  };
+
   const CustomPrevArrow = (props) => {
     const { onClick } = props;
     return (
@@ -138,6 +148,12 @@ const Detail = () => {
           <br />
           <p className={styles.description}>{propiedad.descripcion}</p>
           {/* Puedes agregar más detalles aquí */}
+          <button
+            className={styles.botonWhatsapp}
+            onClick={() => handleClick(propiedad)}
+          >
+            Contactar <i className="fab fa-whatsapp"></i>
+          </button>
         </div>
       </div>
       <div class="info-container" className={styles.div_iconos}>
