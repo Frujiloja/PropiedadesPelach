@@ -14,6 +14,9 @@ const Vender = () => {
     comment: "",
   });
 
+  const destinatario = "horaciopelach@gmail.com";
+
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -23,11 +26,17 @@ const Vender = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const emailData = {
+      ...formData,
+      to_email: destinatario,
+    };
+
     emailjs
       .send(
         "service_fcnnvtf",
         "template_x9w5zw4",
-        formData,
+        emailData,
         "1sBpeKaGLYovogvqY"
       )
       .then(
@@ -35,14 +44,14 @@ const Vender = () => {
           alert("Correo enviado con éxito!");
           console.log(result.text);
           // Limpia el formulario
-          setFormData({ name: "", email: "", message: "" });
+          setFormData({ propertyType: "",  phone: "", name: "", email: "", option: "", comment: "" });
         },
         (error) => {
           alert("Hubo un problema al enviar el correo. Intenta de nuevo.");
           console.log(error.text);
         }
       );
-    console.log("Formulario enviado", formData);
+    console.log("Formulario enviado", emailData);
   };
 
   return (

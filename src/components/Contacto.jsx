@@ -35,7 +35,7 @@ const Contacto = () => {
     emailjs
       .send(
         "service_fcnnvtf",
-        "template_bwaptb9",
+        "template_x9w5zw4",
         emailData,
         "1sBpeKaGLYovogvqY"
       )
