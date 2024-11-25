@@ -257,10 +257,10 @@ const Home = () => {
             </div>
           </div>
         </Link>
-        <Link to="/detail/34">
+        <Link to="/detail/36">
           <div className={styles.card}>
             <img
-              src={propiedades[27].imagen[0]}
+              src={propiedades[25].imagen[0]}
               alt="Descripción de la imagen"
               className={styles.card_image}
             />
@@ -269,10 +269,10 @@ const Home = () => {
             </div>
           </div>
         </Link>
-        <Link to="/detail/8">
+        <Link to="/detail/12">
           <div className={styles.card}>
             <img
-              src={propiedades[5].imagen[0]}
+              src={propiedades[6].imagen[0]}
               alt="Descripción de la imagen"
               className={styles.card_image}
             />
