@@ -371,11 +371,10 @@ h5 {
     align-items: center; /* Para centrar las cards */
     height: auto; /* Ajusta la altura automáticamente */
     gap: 1rem;
-    background-color: red;
   }
 
   .card {
-    width: 100%;
+    width: 80vw;
   }
 
   .box_container {
