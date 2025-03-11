@@ -21,6 +21,13 @@
   color: white
 }
 
+.link2{
+  font-size: 0.8rem;
+  color: rgb(174, 174, 174);
+  text-decoration: none;
+
+}
+
 .textv2 {
   margin: 0;
   font-size: 0.8rem;

@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
       <div className={styles.container}>
         <p className={styles.textv2}>
-          © 2024 Creado por Martin Fuks
+        © 2025 Powered by <a href="https://www.ludden.com.ar" target="_blank" className={styles.link2}>Ludden</a>
         </p>
       </div>
     </footer>
