@@ -19,7 +19,7 @@
 
 .card {
   position: relative;
-  width: 400px; /* Ajusta el ancho según lo que necesites */
+  width: 25vw; /* Ajusta el ancho según lo que necesites */
   height: 200px; /* Ajusta el alto según lo que necesites */
   overflow: hidden;
   border-radius: 10px; /* Opcional: bordes redondeados */
@@ -61,8 +61,8 @@
 }
 
 .selectFiltro {
-  padding: 0.5rem;
-  font-size: 1rem;
+  padding: 0.5vw;
+  font-size: 1vw;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: white;
@@ -152,12 +152,16 @@
 }
 
 .search_container {
-  height: 35vh;
-  width: 50%;
+  width: 50%; /* Ajuste para pantallas grandes */
+  height: auto; /* Permitir que la altura se ajuste automáticamente */
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.324); /* Desplazamiento horizontal, vertical, desenfoque y color */
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.324);
   display: flex;
+  flex-direction: column; /* Asegurar que los elementos se apilen verticalmente */
+  align-items: center; /* Centrar los elementos horizontalmente */
+  padding: 1rem; /* Agregar espacio interno */
+  margin: 0 auto; /* Centrar el contenedor */
 }
 
 .container {
@@ -175,7 +179,7 @@
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: 600;
   width: 80%;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Transición agregada */
@@ -188,7 +192,7 @@
 .tabs {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .tab {
@@ -240,7 +244,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .inputs_price {
@@ -265,6 +269,7 @@ input {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  margin-top: 4vh;
 }
 
 .icon {
@@ -299,6 +304,8 @@ h4 {
   color: black;
   font-weight: 400;
   width: 70%;
+  margin-top: 4vh;
+
 }
 
 p {
